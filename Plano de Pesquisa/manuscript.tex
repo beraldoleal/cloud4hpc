@@ -1,0 +1,97 @@
+
+\documentclass[11pt, titlepage]{article}
+\usepackage[top=20mm, bottom=20mm, left=20mm, right=20mm]{geometry}
+\geometry{a4paper}
+\geometry{portrait}
+\usepackage[utf8]{inputenc}	% Comment out for xelatex; must use with pdflatex
+\usepackage[T1]{fontenc}
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{fontspec}
+\usepackage{epstopdf}
+\usepackage{float}
+\restylefloat{table}
+\usepackage{xcolor}
+\usepackage{colortbl}
+%\usepackage{booktabs}
+\usepackage{tabu}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup[figure]{labelfont=sc}
+\captionsetup[table]{labelfont=sc}
+\captionsetup[tabu]{labelfont=sc}
+
+
+
+\DeclareCaptionType{MPEquation}[][List of equations]
+\captionsetup[MPEquation]{labelformat=empty}
+
+\begin{document}
+\title{Otimizando a Localização de MVs na Nuvem Através de Padrões de Comunicação}\author{Artur Baruchi}
+\maketitle
+\section{Abstract}
+\label{MPSection:916E337A-8E01-4963-AF49-BE8C7DC6C2A9}
+
+O uso de computação na nuvem por usuários de Computação de Alto Desmpenho (HPC -
+      \emph{High Performance Computing}) ainda sofre muita resistência, em grande medida, por conta da grande degradação de desempenho que essas aplicações sofrem ao serem executadas na nuvem. Entre os principais fatores que levam à degradação, pode-se citar (1) interconexão de rede lenta, que utiliza hardaware commodity, (2) ambiente heterôgeneo com diferentes gerações de processadores, (3) compartilhamento do hardware entre diferentes usuários e (4) sobrecarga da virtualização. As estratégias empregadas com objetivo de amenizar as limitações da nuvem estão situadas em duas grandes linhas de pesquisa, a primeira é tornar as aplicações conscientes de estarem sendo executadas em uma ambiente de nuvem (HPC-Aware) e a segunda é tornar a nuvem ciente de que uma determinada aplicação é HPC e, dessa forma, se adapta para melhor atender os requisitos (Cloud-Aware).
+
+Este trabalho situa-se na segunda linha de pesquisa (Cloud-Aware) e tem como objetivo detectar padrões da comunicação de aplicações HPC e com isso alocar as Máquinas Virtuais (VM - Virtual Machine) de maneira a reduzir ou eliminar a sobrecarga inerente de um ambiente de computação. Ao reconhecer um determinado padrão de comunicação poderia ser beneficiado por uma proximidade física das MVs (no mesmo hospedeiro físico ou no mesmo rack) o orquestrador faria a migração da(s) MV(s) com o objetivo de aproximá-las. Outra estratégia seria determinar quais padrões de comunicação são conflitantes e, com isso, evitar que MVs sejam alocadas no mesmo hospedeiro.
+
+\section{Keywords}
+\label{MPSection:3D7588EF-0A74-4F02-AD69-655B1031BE95}
+
+HPC, Cloud, Communication, Message Passing, Characterization
+
+\section{Introdução}
+\label{MPSection:44EB7A3A-0A0A-4C54-8447-1F6D5347559F}
+
+A adesão de usuários de aplicações de Computação de Alto Desempenho (HPC - \emph{High Performance Computing}), seja no ambito acadêmico ou corporativo não é comum. Isso ocorre devido a diversos fatores, como interconexão de rede lenta, ambiente computacional heterogêneo, sobrecarga da virtualização e compartilhamento de recursos. De fato, a computação na nuvem tem como principal argumento a redução de custos de manter um parque computacional complexo e, de forma geral, centros computacionais que tem a sua disposição supercomputadores são menos suscetíveis ao argumento do custo. Entretanto, usuários de aplicações HPC em centros computacionais de pequeno e médio porte (ex. Startups, pequenos laboratórios de pesquisa, etc) possuem maior sensibilidade a apelo da computação da nuvem e por essa razão mais suscetiveis a adotá-la.
+
+Apesar do custo da computação na nuvem ser um atrativo, sua adoção ainda sofre grande resistência por parte de usuários de pequeno e médio porte de aplicações HPC em razão da degradação do desempenho. Em grande medida, a degradação de desempenho de aplicações HPC na nuvem deve-se ao uso de compartilhado de recursos computacionais, principalmente de interfaces de rede.
+
+
+
+\section{Revisão}
+\label{MPSection:FA9A33D4-490F-406D-84E8-2BDA22A0F52D}
+
+
+
+\section{Conclusão}
+\label{MPSection:E3D67007-0EDE-487B-B714-6F004A58F4A3}
+
+
+
+\section{Acknowledgments}
+\label{MPSection:640E517E-5F30-41FD-9883-196E5C5C4E6E}
+
+
+
+\section{Abbreviations}
+\label{MPSection:5197A5CC-52DA-496F-A40D-274D59C80533}
+
+
+
+\section{Author Information}
+\label{MPSection:123E0EEB-7ABB-4C14-B34C-6522D2121C22}
+
+
+
+\section{Author contributions}
+\label{MPSection:3FAE3F54-6E70-4989-980C-B04D76E149C9}
+
+
+
+\section{Competing Interests}
+\label{MPSection:1145FB34-722E-4F10-A9BD-1294B2C92B95}
+
+
+
+\section{Cover Letter}
+\label{MPSection:5F51E60F-C38F-4DB9-B5FD-427AEE97C7A8}
+
+
+
+
+\end{document}
