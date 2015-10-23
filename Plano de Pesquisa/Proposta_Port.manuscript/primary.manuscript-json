@@ -1,0 +1,1842 @@
+{
+  "styles" : [
+    {
+      "updatedAt" : 1445603948.122053,
+      "objectType" : "MPAuxiliaryObjectReferenceStyle",
+      "_rev" : "1-019b72c0f04656e3ed38c0bebcca37c5",
+      "priority" : 10,
+      "_id" : "MPAuxiliaryObjectReferenceStyle:88C57929-DD67-464B-875D-6F4DF579CA3D",
+      "prototype" : "MPAuxiliaryObjectReferenceStyle:default",
+      "title" : "Default",
+      "locked" : true,
+      "bundled" : 0,
+      "embeddedReferenceStringComponents" : [
+        {
+          "bold" : true,
+          "_id" : "MPStyleableStringComponent:B8CF9955-0956-4114-AAC7-F9C6CC99688F",
+          "placeholderString" : "${kind} ${elementIndex}",
+          "italic" : false,
+          "objectType" : "MPStyleableStringComponent"
+        }
+      ],
+      "createdAt" : 1444840741.23249,
+      "name" : "default"
+    },
+    {
+      "updatedAt" : 1445603948.156649,
+      "objectType" : "MPBorderStyle",
+      "_rev" : "1-2ec6bce099ceefc0006724efee47bdc1",
+      "priority" : 20,
+      "_id" : "MPBorderStyle:39AC61BD-A8EE-4298-A796-C5F74D1DDA5E",
+      "prototype" : "MPBorderStyle:E28AA90C-4379-434F-AF58-E2D8C8ED1EB4",
+      "title" : "Dashed",
+      "pattern" : [
+        2,
+        2
+      ],
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232369,
+      "name" : "dashed"
+    },
+    {
+      "locked" : true,
+      "_id" : "MPBorderStyle:7FFB2267-066E-4581-A23F-06BAD0BC846C",
+      "objectType" : "MPBorderStyle",
+      "prototype" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+      "_rev" : "1-c389bb1146be2aa98c377e25f2982398",
+      "bundled" : 0,
+      "title" : "Solid",
+      "updatedAt" : 1445603948.159955,
+      "createdAt" : 1444840741.232359,
+      "priority" : 10,
+      "name" : "solid"
+    },
+    {
+      "updatedAt" : 1445603948.132393,
+      "objectType" : "MPBorderStyle",
+      "_rev" : "1-7c345d78d96ff66528ac378eb9fedc6e",
+      "priority" : 30,
+      "_id" : "MPBorderStyle:B155F769-A698-47F3-A4D6-F1AD806759C6",
+      "prototype" : "MPBorderStyle:00FD8810-B85D-4FC5-8C23-8022A36E07BD",
+      "title" : "Dotted",
+      "pattern" : [
+        1,
+        1
+      ],
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232373,
+      "name" : "dotted"
+    },
+    {
+      "updatedAt" : 1445603948.146326,
+      "objectType" : "MPBorderStyle",
+      "_rev" : "1-c00136d0ee92d7476172fa00d9fc62e0",
+      "priority" : 40,
+      "_id" : "MPBorderStyle:FF5EE2F0-A580-4CC6-AB88-A87C3F51D824",
+      "prototype" : "MPBorderStyle:16583262-A260-4E35-A508-3F960F70074F",
+      "title" : "Double Lines",
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232376,
+      "doubleLines" : true,
+      "name" : "double"
+    },
+    {
+      "updatedAt" : 1445603948.163202,
+      "figureTitleNumberingScheme" : "decimal",
+      "objectType" : "MPCaptionStyle",
+      "_rev" : "1-7beeba8348b3240a3a71db413267d975",
+      "priority" : 10,
+      "_id" : "MPCaptionStyle:7CEE1E1E-4FB8-48E3-81D2-2B2CFF464FC7",
+      "embeddedCaptionComponents" : [
+        {
+          "bold" : true,
+          "_id" : "MPStyleableStringComponent:E43EAFE4-7C81-468E-BF88-8CEF41435062",
+          "placeholderString" : "${kind} ${elementIndex}:",
+          "italic" : false,
+          "objectType" : "MPStyleableStringComponent"
+        },
+        {
+          "editable" : true,
+          "bold" : false,
+          "_id" : "MPStyleableStringComponent:A6F4C1B4-597F-4206-A21A-4CA60F6C7A2E",
+          "placeholderString" : "${caption}",
+          "italic" : false,
+          "objectType" : "MPStyleableStringComponent"
+        }
+      ],
+      "prototype" : "MPCaptionStyle:default",
+      "title" : "Default",
+      "locked" : true,
+      "bundled" : 0,
+      "embeddedFigureTitleComponents" : [
+        {
+          "bold" : true,
+          "_id" : "MPStyleableStringComponent:E5CB691A-EE39-41BD-8D78-22E02BD7782A",
+          "placeholderString" : "${figureIndex}. ",
+          "italic" : false,
+          "objectType" : "MPStyleableStringComponent"
+        },
+        {
+          "editable" : true,
+          "bold" : false,
+          "_id" : "MPStyleableStringComponent:9E4DDC68-4667-49C8-9F3E-600E0258A53A",
+          "placeholderString" : "${title}",
+          "italic" : false,
+          "objectType" : "MPStyleableStringComponent"
+        }
+      ],
+      "createdAt" : 1444840741.232486,
+      "name" : "default"
+    },
+    {
+      "_id" : "MPColor:0ECE8DEB-183E-4068-B3E1-71DD4B3FFD0E",
+      "objectType" : "MPColor",
+      "prototype" : "MPColor:verylightblue",
+      "_rev" : "1-a7943045b73ec0caba5e6ecbdd77bfb7",
+      "bundled" : true,
+      "title" : "Very Light Blue",
+      "updatedAt" : 1445603948.194717,
+      "createdAt" : 1444840741.232398,
+      "priority" : 50,
+      "name" : "verylightblue",
+      "value" : "#f0f0ff"
+    },
+    {
+      "updatedAt" : 1445603948.18082,
+      "objectType" : "MPColor",
+      "_rev" : "1-3a1a8080d24b5385e931780f341a22d1",
+      "priority" : 110,
+      "_id" : "MPColor:14EA2491-4623-4482-AB5D-24D33E0B761A",
+      "prototype" : "MPColor:red",
+      "title" : "Red",
+      "value" : "#ff0000",
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232404,
+      "name" : "red"
+    },
+    {
+      "_id" : "MPColor:23D710CB-7691-44B2-9F64-AC1793A877A0",
+      "objectType" : "MPColor",
+      "prototype" : "MPColor:gray",
+      "_rev" : "1-9515e389d6ebe22e46c72c2061967802",
+      "bundled" : true,
+      "title" : "Gray",
+      "updatedAt" : 1445603948.194713,
+      "createdAt" : 1444840741.232391,
+      "priority" : 50,
+      "name" : "gray",
+      "value" : "#b0b0b0"
+    },
+    {
+      "updatedAt" : 1445603948.184093,
+      "objectType" : "MPColor",
+      "_rev" : "1-408d65a78eceb736701e444a8e60c45e",
+      "priority" : 50,
+      "_id" : "MPColor:39AC45E2-AFFE-4C9F-9363-5440D29E0A7C",
+      "prototype" : "MPColor:verylightblue",
+      "title" : "Very Light Blue",
+      "value" : "#f0f0ff",
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232398,
+      "name" : "verylightblue"
+    },
+    {
+      "updatedAt" : 1445603948.173814,
+      "objectType" : "MPColor",
+      "_rev" : "1-37f73a2224c5ee1a5d3a0bce869db449",
+      "priority" : 50,
+      "_id" : "MPColor:6E4E1194-E43F-4B6D-B8C8-5818E1BBE71B",
+      "prototype" : "MPColor:gray",
+      "title" : "Gray",
+      "value" : "#b0b0b0",
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232391,
+      "name" : "gray"
+    },
+    {
+      "_id" : "MPColor:7B4AC92F-E462-4831-BA2E-9A751917FCB2",
+      "objectType" : "MPColor",
+      "prototype" : "MPColor:red",
+      "_rev" : "1-0e2baa8ffe31bbd5670b31c064213804",
+      "bundled" : true,
+      "title" : "Red",
+      "updatedAt" : 1445603948.194721,
+      "createdAt" : 1444840741.232404,
+      "priority" : 110,
+      "name" : "red",
+      "value" : "#ff0000"
+    },
+    {
+      "updatedAt" : 1445603948.190805,
+      "objectType" : "MPColor",
+      "_rev" : "1-3bdbad51bb809e64e3994168895cc4e4",
+      "priority" : 100,
+      "_id" : "MPColor:87C255CC-AEBE-4EF8-BAD9-CB3D5ECC48C0",
+      "prototype" : "MPColor:white",
+      "title" : "White",
+      "value" : "#ffffff",
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232401,
+      "name" : "white"
+    },
+    {
+      "updatedAt" : 1445603948.170438,
+      "objectType" : "MPColor",
+      "_rev" : "1-e3dd5fa60ed374722ec59f07280b668e",
+      "priority" : 130,
+      "_id" : "MPColor:B0406DE8-7715-492B-8884-B3B39BFFC01A",
+      "prototype" : "MPColor:blue",
+      "title" : "Blue",
+      "value" : "#0000ff",
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232411,
+      "name" : "blue"
+    },
+    {
+      "_id" : "MPColor:B0B666CF-FE1A-48DC-B6AB-277E87ECBBB0",
+      "objectType" : "MPColor",
+      "prototype" : "MPColor:white",
+      "_rev" : "1-a278f7252f4bf52213b4a050d22b22d0",
+      "bundled" : true,
+      "title" : "White",
+      "updatedAt" : 1445603948.194719,
+      "createdAt" : 1444840741.232401,
+      "priority" : 100,
+      "name" : "white",
+      "value" : "#ffffff"
+    },
+    {
+      "_id" : "MPColor:BF2C804E-3AFA-4B5D-88F9-0090C33D35B9",
+      "objectType" : "MPColor",
+      "prototype" : "MPColor:green",
+      "_rev" : "1-54e97a928e4f99e5a773043aa227b672",
+      "bundled" : true,
+      "title" : "Green",
+      "updatedAt" : 1445603948.194723,
+      "createdAt" : 1444840741.232407,
+      "priority" : 120,
+      "name" : "green",
+      "value" : "#00ff00"
+    },
+    {
+      "updatedAt" : 1445603948.167056,
+      "objectType" : "MPColor",
+      "_rev" : "1-1dd668a08dc96f8b4c8a23a4e387395b",
+      "priority" : 10,
+      "_id" : "MPColor:C79E0490-CC9F-4415-8273-5B2FC24EB174",
+      "prototype" : "MPColor:black",
+      "title" : "Black",
+      "value" : "#000000",
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232384,
+      "name" : "black"
+    },
+    {
+      "_id" : "MPColor:D1C7F65F-A490-43E9-BBDA-07E04880CA88",
+      "objectType" : "MPColor",
+      "prototype" : "MPColor:verylightgray",
+      "_rev" : "1-0432220e5f3283d535f717d17cad48a4",
+      "bundled" : true,
+      "title" : "Very Light Gray",
+      "updatedAt" : 1445603948.194716,
+      "createdAt" : 1444840741.232394,
+      "priority" : 50,
+      "name" : "verylightgray",
+      "value" : "#f4f4f4"
+    },
+    {
+      "updatedAt" : 1445603948.187483,
+      "objectType" : "MPColor",
+      "_rev" : "1-f7606b1340f2a2489b5a44c2cd0f43a8",
+      "priority" : 50,
+      "_id" : "MPColor:F112825C-4DFF-4BF0-A3D9-4760A3178B77",
+      "prototype" : "MPColor:verylightgray",
+      "title" : "Very Light Gray",
+      "value" : "#f4f4f4",
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232394,
+      "name" : "verylightgray"
+    },
+    {
+      "_id" : "MPColor:F3C62939-32B4-401F-A4E9-D9074882CA3D",
+      "objectType" : "MPColor",
+      "prototype" : "MPColor:blue",
+      "_rev" : "1-c50d335ba665a107f2f81557d2e44801",
+      "bundled" : true,
+      "title" : "Blue",
+      "updatedAt" : 1445603948.194725,
+      "createdAt" : 1444840741.232411,
+      "priority" : 130,
+      "name" : "blue",
+      "value" : "#0000ff"
+    },
+    {
+      "_id" : "MPColor:F6CA1724-026B-4C51-8381-968F1B46C5C5",
+      "objectType" : "MPColor",
+      "prototype" : "MPColor:black",
+      "_rev" : "1-7365f67a139062d3653070a7b1a8c48a",
+      "bundled" : true,
+      "title" : "Black",
+      "updatedAt" : 1445603948.194709,
+      "createdAt" : 1444840741.232384,
+      "priority" : 10,
+      "name" : "black",
+      "value" : "#000000"
+    },
+    {
+      "updatedAt" : 1445603948.17727,
+      "objectType" : "MPColor",
+      "_rev" : "1-42c9178fb381a1ccc5d56a2e226102c3",
+      "priority" : 120,
+      "_id" : "MPColor:FF0F7D55-96DC-4488-B1F3-01D690C1A5E0",
+      "prototype" : "MPColor:green",
+      "title" : "Green",
+      "value" : "#00ff00",
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232407,
+      "name" : "green"
+    },
+    {
+      "colors" : [
+        "MPColor:F6CA1724-026B-4C51-8381-968F1B46C5C5",
+        "MPColor:23D710CB-7691-44B2-9F64-AC1793A877A0",
+        "MPColor:D1C7F65F-A490-43E9-BBDA-07E04880CA88",
+        "MPColor:0ECE8DEB-183E-4068-B3E1-71DD4B3FFD0E",
+        "MPColor:B0B666CF-FE1A-48DC-B6AB-277E87ECBBB0",
+        "MPColor:7B4AC92F-E462-4831-BA2E-9A751917FCB2",
+        "MPColor:BF2C804E-3AFA-4B5D-88F9-0090C33D35B9",
+        "MPColor:F3C62939-32B4-401F-A4E9-D9074882CA3D"
+      ],
+      "locked" : true,
+      "objectType" : "MPColorScheme",
+      "prototype" : "MPColorScheme:default",
+      "_id" : "MPColorScheme:E7177E3C-3CD6-4D94-B629-CD5ECC60FB57",
+      "bundled" : 0,
+      "_rev" : "1-e83f998c16ba4255a3f500b0a9014b16",
+      "updatedAt" : 1445603948.199451,
+      "createdAt" : 1444840741.232416,
+      "name" : "Manuscripts default colour scheme"
+    },
+    {
+      "updatedAt" : 1445603948.232622,
+      "objectType" : "MPFigureLayout",
+      "_rev" : "1-b1276b5b07679b3858a585096b8b3ef3",
+      "priority" : 25,
+      "_id" : "MPFigureLayout:01F3D30E-5896-4E05-A708-9196B20D82BD",
+      "prototype" : "MPFigureLayout:two_figures_stacked",
+      "title" : "Two Figures Stacked",
+      "columns" : 1,
+      "rows" : 2,
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232504,
+      "name" : "two_figures_stacked"
+    },
+    {
+      "updatedAt" : 1445603948.211951,
+      "objectType" : "MPFigureLayout",
+      "_rev" : "1-c76dcd6f4e0a27f754493c672b658c1e",
+      "priority" : 10,
+      "_id" : "MPFigureLayout:18CA985E-F903-42EA-BB46-E88C2C2410C0",
+      "prototype" : "MPFigureLayout:default",
+      "title" : "Single Figure",
+      "columns" : 1,
+      "rows" : 1,
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232498,
+      "name" : "default"
+    },
+    {
+      "updatedAt" : 1445603948.222368,
+      "objectType" : "MPFigureLayout",
+      "_rev" : "1-bf6af27726d417e877ceda21e12a2022",
+      "priority" : 30,
+      "_id" : "MPFigureLayout:22E1E87A-8CC4-42E6-B099-64EEF532D2E3",
+      "prototype" : "MPFigureLayout:three_figures",
+      "title" : "Three Figures in a Row",
+      "columns" : 3,
+      "rows" : 1,
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232506,
+      "name" : "three_figures"
+    },
+    {
+      "updatedAt" : 1445603948.22902,
+      "objectType" : "MPFigureLayout",
+      "_rev" : "1-d87b4a0a2d397cebdb9c342da4e8d259",
+      "priority" : 20,
+      "_id" : "MPFigureLayout:4151DD2C-DA3F-48C1-996E-50697F131B81",
+      "prototype" : "MPFigureLayout:two_figures",
+      "title" : "Two Figures Side by Side",
+      "columns" : 2,
+      "rows" : 1,
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232502,
+      "name" : "two_figures"
+    },
+    {
+      "updatedAt" : 1445603948.218756,
+      "objectType" : "MPFigureLayout",
+      "_rev" : "1-5ee90744ba56d1efbe4f8b4b8b3a25cc",
+      "priority" : 90,
+      "_id" : "MPFigureLayout:4A0678EB-9F90-47EE-87CB-7A48C8644966",
+      "prototype" : "MPFigureLayout:nine_figures",
+      "title" : "Nine Figures (3×3)",
+      "columns" : 3,
+      "rows" : 3,
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232516,
+      "name" : "nine_figures"
+    },
+    {
+      "updatedAt" : 1445603948.204528,
+      "objectType" : "MPFigureLayout",
+      "_rev" : "1-3ffb971858d3b143a8cab5f490ad08fc",
+      "priority" : 65,
+      "_id" : "MPFigureLayout:4DA53BBE-AB8B-42F9-9A90-47F0BA96E089",
+      "prototype" : "MPFigureLayout:2_by_3",
+      "title" : "Six Figures (2×3)",
+      "columns" : 2,
+      "rows" : 3,
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232514,
+      "name" : "2_by_3"
+    },
+    {
+      "updatedAt" : 1445603948.20821,
+      "objectType" : "MPFigureLayout",
+      "_rev" : "1-fdf8246dd1ce7bd9b7d8c8c044f5d586",
+      "priority" : 60,
+      "_id" : "MPFigureLayout:7768172D-2767-4F0E-9090-6E65EB2F4E1F",
+      "prototype" : "MPFigureLayout:3_by_2",
+      "title" : "Six Figures (3×2)",
+      "columns" : 3,
+      "rows" : 2,
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232512,
+      "name" : "3_by_2"
+    },
+    {
+      "updatedAt" : 1445603948.225857,
+      "objectType" : "MPFigureLayout",
+      "_rev" : "1-ee000b313466af342c158a736e408199",
+      "priority" : 35,
+      "_id" : "MPFigureLayout:A6E51119-D251-44C5-B200-64F9F2DF8BF9",
+      "prototype" : "MPFigureLayout:three_figures_stacked",
+      "title" : "Three Figures Stacked",
+      "columns" : 1,
+      "rows" : 3,
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.232508,
+      "name" : "three_figures_stacked"
+    },
+    {
+      "updatedAt" : 1445603948.215483,
+      "objectType" : "MPFigureLayout",
+      "_rev" : "1-179f0f8cefb2fff63b216d38b6949b58",
+      "priority" : 40,
+      "_id" : "MPFigureLayout:E8DEA769-606A-4833-81D0-B0083F6D62C7",
+      "prototype" : "MPFigureLayout:four_figures",
+      "title" : "Four figures (2×2)",
+      "columns" : 2,
+      "rows" : 2,
+      "locked" : true,
+      "bundled" : 0,
+      "createdAt" : 1444840741.23251,
+      "name" : "four_figures"
+    },
+    {
+      "updatedAt" : 1445603948.235989,
+      "objectType" : "MPFigureStyle",
+      "innerBorder" : {
+        "_id" : "MPBorder:0FFF4CDC-9D5C-4B7D-A606-F0374354FB7F",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 1,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "outerBorder" : {
+        "_id" : "MPBorder:617000AE-D9C8-498C-A4F3-A000CCD2DD72",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 0,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "priority" : 90,
+      "_id" : "MPFigureStyle:03D94C9A-240A-401C-9583-74644ACCACB7",
+      "prototype" : "MPFigureStyle:bordered-caption-above",
+      "title" : "Bordered, Caption Above",
+      "_rev" : "1-f25e0395d989c3b077b6b7149d0f6ce8",
+      "locked" : true,
+      "bundled" : 0,
+      "captionPosition" : "above",
+      "createdAt" : 1444840741.232482,
+      "name" : "bordered_caption_above",
+      "preferredXHTMLElement" : "figure"
+    },
+    {
+      "innerSpacing" : 1,
+      "updatedAt" : 1445603948.239262,
+      "objectType" : "MPFigureStyle",
+      "innerBorder" : {
+        "_id" : "MPBorder:0FFF4CDC-9D5C-4B7D-A606-F0374354FB7F",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 1,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "_rev" : "1-4f48a487c18d3e4e12795461b98f587a",
+      "priority" : 30,
+      "_id" : "MPFigureStyle:254ADB77-2BDC-4C9B-B933-4319D94847BC",
+      "prototype" : "MPFigureStyle:bordered-caption-below",
+      "title" : "Bordered, Caption Below",
+      "locked" : true,
+      "bundled" : 0,
+      "captionPosition" : "below",
+      "createdAt" : 1444840741.232478,
+      "name" : "bordered_caption_below",
+      "preferredXHTMLElement" : "figure"
+    },
+    {
+      "updatedAt" : 1445603948.249732,
+      "objectType" : "MPFigureStyle",
+      "innerBorder" : {
+        "_id" : "MPBorder:0FFF4CDC-9D5C-4B7D-A606-F0374354FB7F",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 0,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "outerBorder" : {
+        "_id" : "MPBorder:0FFF4CDC-9D5C-4B7D-A606-F0374354FB7F",
+        "objectType" : "MPBorder",
+        "width" : 0
+      },
+      "priority" : 10,
+      "_id" : "MPFigureStyle:365EB505-5539-4645-AD09-F18AB5F82A12",
+      "prototype" : "MPFigureStyle:default",
+      "title" : "Default",
+      "_rev" : "1-4c20f30fbbc31283e0116a7ffa8f6c7c",
+      "locked" : true,
+      "bundled" : 0,
+      "captionPosition" : "below",
+      "createdAt" : 1444840741.232468,
+      "name" : "default",
+      "preferredXHTMLElement" : "figure"
+    },
+    {
+      "innerSpacing" : 1,
+      "outerSpacing" : 0,
+      "updatedAt" : 1445603948.24634,
+      "objectType" : "MPFigureStyle",
+      "innerBorder" : {
+        "_id" : "MPBorder:0FFF4CDC-9D5C-4B7D-A606-F0374354FB7F",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 0,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "outerBorder" : {
+        "_id" : "MPBorder:1D66EC86-50A7-430B-A22F-EF025071C5D3",
+        "objectType" : "MPBorder",
+        "width" : 0
+      },
+      "priority" : 20,
+      "_id" : "MPFigureStyle:9904F7C3-2445-4F61-B1D3-139CFDEE9AE0",
+      "prototype" : "MPFigureStyle:borderless-caption-below",
+      "title" : "Borderless, Caption Below",
+      "_rev" : "1-d2fe56cf47f70a4bc13a82e6f588c80f",
+      "locked" : true,
+      "bundled" : 0,
+      "captionPosition" : "below",
+      "createdAt" : 1444840741.232473,
+      "name" : "borderless_caption_below",
+      "preferredXHTMLElement" : "figure"
+    },
+    {
+      "updatedAt" : 1445603948.242737,
+      "objectType" : "MPFigureStyle",
+      "innerBorder" : {
+        "_id" : "MPBorder:0FFF4CDC-9D5C-4B7D-A606-F0374354FB7F",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 0,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "outerBorder" : {
+        "_id" : "MPBorder:617000AE-D9C8-498C-A4F3-A000CCD2DD72",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 0,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "priority" : 90,
+      "_id" : "MPFigureStyle:D6825546-75AF-4906-A65E-8BDC557BD99E",
+      "prototype" : "MPFigureStyle:borderless-caption-above",
+      "title" : "Borderless, Caption Above",
+      "_rev" : "1-996a400c23c1dae77ebbccb48da6d54a",
+      "locked" : true,
+      "bundled" : 0,
+      "captionPosition" : "above",
+      "createdAt" : 1444840741.232481,
+      "name" : "borderless_caption_above",
+      "preferredXHTMLElement" : "figure"
+    },
+    {
+      "updatedAt" : 1445603948.253349,
+      "topMargin" : 20,
+      "objectType" : "MPPageLayout",
+      "defaultParagraphStyle" : "MPParagraphStyle:bodyText",
+      "_rev" : "1-cd78b60492b715ae6af87908939e4d81",
+      "_id" : "MPPageLayout:1D2B6116-C573-4266-84B9-6A27F3900870",
+      "prototype" : "MPPageLayout:defaultA4",
+      "beginChaptersOnRightHandPages" : true,
+      "displayUnits" : "mm",
+      "leftMargin" : 20,
+      "locked" : true,
+      "bottomMargin" : 20,
+      "mirrorPagesHorizontally" : true,
+      "bundled" : 0,
+      "rightMargin" : 20,
+      "createdAt" : 1444840741.232347,
+      "embeddedNumberingStyle" : {
+        "_id" : "MPNumberingStyle:CB6FF724-7F91-454A-9A3C-30293471E039",
+        "prefix" : "[",
+        "objectType" : "MPNumberingStyle",
+        "suffix" : "]",
+        "startIndex" : 1,
+        "priority" : 99,
+        "numberingScheme" : "decimal"
+      },
+      "pageSize" : "a4"
+    },
+    {
+      "firstLineIndent" : 0,
+      "locked" : true,
+      "title" : "Subsubsection Heading",
+      "bottomSpacing" : 5,
+      "_id" : "MPParagraphStyle:0AAAB5BB-B85F-4998-8443-90E93C3EC775",
+      "kind" : "heading",
+      "createdAt" : 1444840741.232449,
+      "bundled" : 0,
+      "textStyling" : {
+        "_id" : "MPTextStyling:055123F5-3704-49FE-B59B-D801598C67C4",
+        "color" : "MPColor:black",
+        "fontSize" : 12,
+        "italic" : false,
+        "objectType" : "MPTextStyling",
+        "fontFamily" : "Charter",
+        "bold" : true
+      },
+      "name" : "heading3",
+      "preferredXHTMLElement" : "h3",
+      "priority" : 22,
+      "topSpacing" : 8,
+      "updatedAt" : 1445603948.267716,
+      "lineSpacing" : 1.5,
+      "nextStyle" : "MPParagraphStyle:bodyText",
+      "headIndent" : 0,
+      "_rev" : "1-60f5d13fa3e4628762aa6cbe589c5e28",
+      "tailIndent" : 0,
+      "alignment" : "left",
+      "objectType" : "MPParagraphStyle",
+      "prototype" : "MPParagraphStyle:H3"
+    },
+    {
+      "firstLineIndent" : 0,
+      "locked" : true,
+      "title" : "Subsubsubsection Heading",
+      "bottomSpacing" : 5,
+      "_id" : "MPParagraphStyle:0DA65109-46CA-414F-A0C9-1FEEF2E886B7",
+      "kind" : "heading",
+      "createdAt" : 1444840741.232452,
+      "bundled" : 0,
+      "textStyling" : {
+        "_id" : "MPTextStyling:A3F0EF28-7A3F-4208-9205-5BD3FF8C1066",
+        "color" : "MPColor:black",
+        "fontSize" : 12,
+        "italic" : false,
+        "objectType" : "MPTextStyling",
+        "fontFamily" : "Charter",
+        "bold" : true
+      },
+      "name" : "heading4",
+      "preferredXHTMLElement" : "h4",
+      "priority" : 23,
+      "topSpacing" : 8,
+      "updatedAt" : 1445603948.270882,
+      "lineSpacing" : 1.5,
+      "nextStyle" : "MPParagraphStyle:bodyText",
+      "headIndent" : 0,
+      "_rev" : "1-ba085dba5b629f2d9e403b4191e6312f",
+      "tailIndent" : 0,
+      "alignment" : "left",
+      "objectType" : "MPParagraphStyle",
+      "prototype" : "MPParagraphStyle:H4"
+    },
+    {
+      "firstLineIndent" : 0,
+      "locked" : true,
+      "title" : "Manuscript Title",
+      "bottomSpacing" : 10,
+      "_id" : "MPParagraphStyle:2E5892F6-072B-454F-8669-F72923604BA1",
+      "kind" : "heading",
+      "createdAt" : 1444840741.232438,
+      "bundled" : 0,
+      "textStyling" : {
+        "_id" : "MPTextStyling:BBA06E82-F724-419F-A81E-1886644AA4B9",
+        "color" : "MPColor:black",
+        "fontSize" : 20,
+        "italic" : false,
+        "objectType" : "MPTextStyling",
+        "fontFamily" : "Charter",
+        "bold" : true
+      },
+      "name" : "manuscriptTitle",
+      "preferredXHTMLElement" : "h1",
+      "priority" : 19,
+      "topSpacing" : 10,
+      "updatedAt" : 1445603948.281308,
+      "lineSpacing" : 1.5,
+      "nextStyle" : "MPParagraphStyle:bodyText",
+      "headIndent" : 0,
+      "_rev" : "1-7e4a41fba05963ef978c6bfcc166b5b8",
+      "tailIndent" : 0,
+      "alignment" : "left",
+      "objectType" : "MPParagraphStyle",
+      "prototype" : "MPParagraphStyle:manuscriptTitle"
+    },
+    {
+      "firstLineIndent" : 0,
+      "locked" : true,
+      "title" : "Subsubsubsubsection Heading",
+      "bottomSpacing" : 5,
+      "_id" : "MPParagraphStyle:398207A0-D2F4-45D0-B93B-46C3E1F23E05",
+      "kind" : "heading",
+      "createdAt" : 1444840741.232454,
+      "bundled" : 0,
+      "textStyling" : {
+        "_id" : "MPTextStyling:6094A8B5-2751-489F-B4A5-699E54B57DC3",
+        "color" : "MPColor:black",
+        "fontSize" : 12,
+        "italic" : false,
+        "objectType" : "MPTextStyling",
+        "fontFamily" : "Charter",
+        "bold" : true
+      },
+      "name" : "heading5",
+      "preferredXHTMLElement" : "h5",
+      "priority" : 24,
+      "topSpacing" : 8,
+      "updatedAt" : 1445603948.274473,
+      "lineSpacing" : 1.5,
+      "nextStyle" : "MPParagraphStyle:bodyText",
+      "headIndent" : 0,
+      "_rev" : "1-00faa7738648136c464371d3b3b329bf",
+      "tailIndent" : 0,
+      "alignment" : "left",
+      "objectType" : "MPParagraphStyle",
+      "prototype" : "MPParagraphStyle:H5"
+    },
+    {
+      "firstLineIndent" : 0,
+      "locked" : true,
+      "title" : "Section Heading",
+      "bottomSpacing" : 5,
+      "_id" : "MPParagraphStyle:50118559-2212-4866-B735-85BF8CEFF867",
+      "kind" : "heading",
+      "createdAt" : 1444840741.232444,
+      "bundled" : 0,
+      "textStyling" : {
+        "_id" : "MPTextStyling:2E2D93EB-2474-4494-AD92-B5EAD46A38BE",
+        "color" : "MPColor:black",
+        "fontSize" : 16,
+        "italic" : false,
+        "objectType" : "MPTextStyling",
+        "fontFamily" : "Charter",
+        "bold" : true
+      },
+      "name" : "heading1",
+      "preferredXHTMLElement" : "h1",
+      "priority" : 20,
+      "topSpacing" : 8,
+      "updatedAt" : 1445603948.260345,
+      "lineSpacing" : 1.5,
+      "nextStyle" : "MPParagraphStyle:bodyText",
+      "headIndent" : 0,
+      "_rev" : "1-01721018b2728ea5e52bb7c904834309",
+      "tailIndent" : 0,
+      "alignment" : "left",
+      "objectType" : "MPParagraphStyle",
+      "prototype" : "MPParagraphStyle:H1"
+    },
+    {
+      "firstLineIndent" : 0,
+      "embeddedListItemNumberingStyles" : {
+        "1" : {
+          "numberingScheme" : "decimal",
+          "_id" : "MPNumberingStyle:5A479546-C898-4C4B-9836-202EA34332A8",
+          "prefix" : "",
+          "suffix" : ".",
+          "objectType" : "MPNumberingStyle",
+          "startIndex" : 1
+        },
+        "2" : {
+          "numberingScheme" : "decimal",
+          "_id" : "MPNumberingStyle:BE16BD50-9F21-49A7-8F66-15011A3DBCEE",
+          "prefix" : "",
+          "suffix" : ".",
+          "objectType" : "MPNumberingStyle",
+          "startIndex" : 1
+        },
+        "3" : {
+          "numberingScheme" : "decimal",
+          "_id" : "MPNumberingStyle:5AC47239-EDA2-4314-8BE5-8A5399F379DF",
+          "prefix" : "",
+          "suffix" : ".",
+          "objectType" : "MPNumberingStyle",
+          "startIndex" : 1
+        }
+      },
+      "locked" : true,
+      "title" : "Body Text",
+      "bottomSpacing" : 10,
+      "listTailIndent" : 0,
+      "_id" : "MPParagraphStyle:5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE",
+      "kind" : "body",
+      "createdAt" : 1444840741.23246,
+      "bundled" : 0,
+      "hideListNumberingSuffixForLastLevel" : true,
+      "hierarchicalListNumbering" : false,
+      "name" : "bodyText",
+      "preferredXHTMLElement" : "p",
+      "priority" : 10,
+      "textStyling" : {
+        "_id" : "MPTextStyling:A6E169AC-4610-44C6-A979-7FD95AE787CC",
+        "color" : "MPColor:black",
+        "fontSize" : 12,
+        "italic" : false,
+        "objectType" : "MPTextStyling",
+        "fontFamily" : "Charter",
+        "bold" : false
+      },
+      "lineSpacing" : 2,
+      "nextStyle" : "MPParagraphStyle:bodyText",
+      "topSpacing" : 10,
+      "listItemIndentPerLevel" : 30,
+      "updatedAt" : 1445603948.256815,
+      "headIndent" : 0,
+      "_rev" : "1-cd9c53aa61b7df9f44efb7f6104cd76e",
+      "tailIndent" : 0,
+      "alignment" : "left",
+      "objectType" : "MPParagraphStyle",
+      "listHeadIndent" : 30,
+      "embeddedListItemBulletStyles" : {
+        "1" : {
+          "_id" : "MPListItemBulletStyle:0E9110F4-8426-4B66-B97A-9053CFC9C77A",
+          "bulletStyle" : "disc",
+          "objectType" : "MPListItemBulletStyle"
+        },
+        "2" : {
+          "_id" : "MPListItemBulletStyle:1066DC6B-704F-4CA0-B807-72F461F5E0BA",
+          "bulletStyle" : "circle",
+          "objectType" : "MPListItemBulletStyle"
+        }
+      },
+      "prototype" : "MPParagraphStyle:bodyText"
+    },
+    {
+      "firstLineIndent" : 0,
+      "locked" : true,
+      "title" : "Subsubsubsubsubsection Heading",
+      "bottomSpacing" : 5,
+      "_id" : "MPParagraphStyle:A83B6867-667C-479B-B56D-9E528E0D477E",
+      "kind" : "heading",
+      "createdAt" : 1444840741.232457,
+      "bundled" : 0,
+      "textStyling" : {
+        "_id" : "MPTextStyling:5507294C-AD8D-48EC-B86A-A4E5AE6C34D5",
+        "color" : "MPColor:black",
+        "fontSize" : 10,
+        "italic" : false,
+        "objectType" : "MPTextStyling",
+        "fontFamily" : "Charter",
+        "bold" : true
+      },
+      "name" : "heading6",
+      "preferredXHTMLElement" : "h6",
+      "priority" : 25,
+      "topSpacing" : 8,
+      "updatedAt" : 1445603948.277924,
+      "lineSpacing" : 1.5,
+      "nextStyle" : "MPParagraphStyle:bodyText",
+      "headIndent" : 0,
+      "_rev" : "1-882721808d6bf6af25ee699017512e38",
+      "tailIndent" : 0,
+      "alignment" : "left",
+      "objectType" : "MPParagraphStyle",
+      "prototype" : "MPParagraphStyle:H6"
+    },
+    {
+      "firstLineIndent" : 0,
+      "locked" : true,
+      "title" : "Subsection Heading",
+      "bottomSpacing" : 5,
+      "_id" : "MPParagraphStyle:CA325327-EDD4-4AA4-AB89-D1ED6ECC4441",
+      "kind" : "heading",
+      "createdAt" : 1444840741.232447,
+      "bundled" : 0,
+      "textStyling" : {
+        "_id" : "MPTextStyling:0A37ACFF-1D8A-4068-ABD0-0594C99C8EE0",
+        "color" : "MPColor:black",
+        "fontSize" : 14,
+        "italic" : false,
+        "objectType" : "MPTextStyling",
+        "fontFamily" : "Charter",
+        "bold" : true
+      },
+      "name" : "heading2",
+      "preferredXHTMLElement" : "h2",
+      "priority" : 21,
+      "topSpacing" : 8,
+      "updatedAt" : 1445603948.264049,
+      "lineSpacing" : 1.5,
+      "nextStyle" : "MPParagraphStyle:bodyText",
+      "headIndent" : 0,
+      "_rev" : "1-de113db61170daa1eed74a96519c5292",
+      "tailIndent" : 0,
+      "alignment" : "left",
+      "objectType" : "MPParagraphStyle",
+      "prototype" : "MPParagraphStyle:H2"
+    },
+    {
+      "headerTopBorder" : {
+        "_id" : "MPBorder:9CB78DD5-BB21-473B-8276-DAB70873FE7D",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 2,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "locked" : true,
+      "headerRightBorder" : {
+        "_id" : "MPBorder:6FBF5B35-27A4-4146-87DE-162D05D368A9",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 3,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:blue"
+      },
+      "title" : "Colorful Test Table Style",
+      "bodyColumnSeparatorBorder" : {
+        "_id" : "MPBorder:24484580-1489-40A1-82F4-717FB5E54F33",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 1,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:red"
+      },
+      "footerBottomBorder" : {
+        "_id" : "MPBorder:1179659A-2E24-4A75-A80D-133B0F9BD2CC",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 1,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "footerBackgroundColor" : "MPColor:gray",
+      "footerTopSpacing" : 3,
+      "_id" : "MPTableStyle:0EF6BBF6-260C-4D71-8749-305FD8A3C34A",
+      "bodyBackgroundAlternateColor" : "MPColor:verylightgray",
+      "bundled" : 0,
+      "createdAt" : 1444840741.232429,
+      "headerBottomBorder" : {
+        "_id" : "MPBorder:25556D0A-70E4-4288-AB10-508A7459FEF4",
+        "style" : "MPBorderStyle:00FD8810-B85D-4FC5-8C23-8022A36E07BD",
+        "width" : 1,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "name" : "crazy",
+      "priority" : 20,
+      "updatedAt" : 1445603948.285069,
+      "bodyBackgroundColor" : "MPColor:white",
+      "headerBottomSpacing" : 3,
+      "_rev" : "1-afe4b60eb9706e3fd3b303ce1cfd1889",
+      "footerTopBorder" : {
+        "_id" : "MPBorder:3AE3F286-E87C-4E3B-B3FF-B75F43F8AD91",
+        "style" : "MPBorderStyle:00FD8810-B85D-4FC5-8C23-8022A36E07BD",
+        "width" : 1,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "bodyLeftBorder" : {
+        "_id" : "MPBorder:BFEABE48-E03A-47FE-ABA1-C58850BE89EC",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 2,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "objectType" : "MPTableStyle",
+      "footerRightBorder" : {
+        "_id" : "MPBorder:2E392D61-2E57-49D6-BAFE-87B996140586",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 3,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:green"
+      },
+      "prototype" : "MPTableStyle:colorful-test-table-style",
+      "headerBackgroundColor" : "MPColor:verylightgray"
+    },
+    {
+      "headerTopBorder" : {
+        "_id" : "MPBorder:6BC92907-B7DF-4542-84CF-1456246EFEA9",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 2,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "locked" : true,
+      "title" : "Default Table Style",
+      "bodyColumnSeparatorBorder" : {
+        "_id" : "MPBorder:EBB5D0B3-A9FE-49B3-ADAD-2CC5851D91F9",
+        "style" : "MPBorderStyle:00FD8810-B85D-4FC5-8C23-8022A36E07BD",
+        "width" : 1,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "footerBottomBorder" : {
+        "_id" : "MPBorder:EC933CA4-ABBB-49D0-A2EF-4B0B2D1DA786",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 1,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "footerBackgroundColor" : "MPColor:white",
+      "footerTopSpacing" : 3,
+      "_id" : "MPTableStyle:86B835FD-C2ED-4CEB-91D5-B492D218501B",
+      "bodyBackgroundAlternateColor" : "MPColor:white",
+      "bundled" : 0,
+      "createdAt" : 1444840741.232424,
+      "headerBottomBorder" : {
+        "_id" : "MPBorder:EB6A90B8-E464-4016-A6E7-90F704EC63C2",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 1,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "name" : "default",
+      "priority" : 10,
+      "updatedAt" : 1445603948.288668,
+      "bodyBackgroundColor" : "MPColor:white",
+      "headerBottomSpacing" : 3,
+      "_rev" : "1-be02f5ab6692d903016adad1ddb20867",
+      "footerTopBorder" : {
+        "_id" : "MPBorder:2338AB83-D20B-4118-8C38-D0F330E85F23",
+        "style" : "MPBorderStyle:EBBB68B9-16A9-4EA2-8817-43755FF1B7A1",
+        "width" : 1,
+        "objectType" : "MPBorder",
+        "color" : "MPColor:black"
+      },
+      "objectType" : "MPTableStyle",
+      "prototype" : "MPTableStyle:default",
+      "headerBackgroundColor" : "MPColor:verylightgray"
+    }
+  ],
+  "manuscript-metadata" : {
+    "_id" : "MPMetadata:manuscript"
+  },
+  "annotations-metadata" : {
+    "_id" : "MPMetadata:annotations"
+  },
+  "metadata" : {
+
+  },
+  "contributors" : [
+    {
+      "prename" : "Artur",
+      "updatedAt" : 1445605266.672592,
+      "lastName" : "Baruchi",
+      "firstName" : "Artur",
+      "addressBookIDs" : [
+        "F3C5424E-114A-43A1-B751-C0D1F60A8E96:ABPerson"
+      ],
+      "objectType" : "MPContributor",
+      "_rev" : "23-8c549dff31694ce5198789a5ba308193",
+      "_id" : "MPContributor:0AEC86CE-EE05-41F5-90DF-C5796C66F5CD",
+      "affiliations" : [
+        "MPAffiliation:D1A19EDD-E442-465C-AF90-9319231AE32F",
+        "MPAffiliation:1141F046-D75C-4E01-A0D5-C6B5E8DC1BD7"
+      ],
+      "middleNames" : "",
+      "isCorresponding" : 1,
+      "createdAt" : 1445605084.441603,
+      "email" : "artur.baruchi@gmail.com",
+      "nameString" : "[1] Baruchi [4] Artur "
+    }
+  ],
+  "contributorIdentities" : [
+    {
+      "_id" : "MPContributorIdentity:76AB6E7E-F792-4CFA-B039-71F70E06BC94",
+      "objectType" : "MPContributorIdentity",
+      "_rev" : "1-22b2e704434caf8732a44d7a8068438a",
+      "namespace" : "com.manuscriptsapp.shared.package.identity",
+      "identifier" : "EDB325F8-72BE-4277-8C46-22BA98BACD87",
+      "contributor" : "MPContributor:0AEC86CE-EE05-41F5-90DF-C5796C66F5CD",
+      "createdAt" : 1445605084.4306,
+      "updatedAt" : 1445605084.4306
+    }
+  ],
+  "sections" : [
+    {
+      "updatedAt" : 1445603948.0389,
+      "category" : "MPSectionCategory:competing-interests",
+      "objectType" : "MPSection",
+      "_rev" : "2-1b056eb63b1002c7e9db521a48d47da2",
+      "_id" : "MPSection:1145FB34-722E-4F10-A9BD-1294B2C92B95",
+      "firstElementPlaceholderString" : "A competing interest exists when your interpretation of data or presentation of information may be influenced by your personal or financial relationship with other people or organizations. Authors must disclose any financial competing interests; they should also reveal any non-financial competing interests that may cause them embarrassment were they to become public after the publication of the manuscript.\n\nAuthors are required to complete a declaration of competing interests. All competing interests that are declared will be listed at the end of published articles. Where an author gives no competing interests, the listing will read 'The author(s) declare that they have no competing interests'.",
+      "title" : "Competing Interests",
+      "path" : [
+        "MPSection:1145FB34-722E-4F10-A9BD-1294B2C92B95"
+      ],
+      "priority" : 9,
+      "createdAt" : 1445603948.031974,
+      "elementIDs" : [
+        "MPParagraphElement:D52E5BDB-7A69-4882-B27B-CBAB4C57867D"
+      ],
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
+    },
+    {
+      "updatedAt" : 1445603947.981573,
+      "category" : "MPSectionCategory:author-information",
+      "objectType" : "MPSection",
+      "_rev" : "2-02e15930da1329c5b9b1773204bbf72c",
+      "_id" : "MPSection:123E0EEB-7ABB-4C14-B34C-6522D2121C22",
+      "firstElementPlaceholderString" : "You may choose to use this section to include any relevant information about the author(s) that may aid the reader's interpretation of the article, and understand the standpoint of the author(s). This may include details about the authors' qualifications, current positions they hold at institutions or societies, or any other relevant background information. Please refer to authors using their initials. Note this section should not be used to describe any competing interests.",
+      "title" : "Author Information",
+      "path" : [
+        "MPSection:123E0EEB-7ABB-4C14-B34C-6522D2121C22"
+      ],
+      "priority" : 7,
+      "createdAt" : 1445603947.972458,
+      "elementIDs" : [
+        "MPParagraphElement:4A5A2369-6846-49FC-B4A5-07DE9CEBE91E"
+      ],
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
+    },
+    {
+      "_id" : "MPSection:3D7588EF-0A74-4F02-AD69-655B1031BE95",
+      "category" : "MPSectionCategory:keywords",
+      "objectType" : "MPSection",
+      "_rev" : "2-9b91b361f06dbe033c90fbfa2327c75f",
+      "title" : "Keywords",
+      "elementIDs" : [
+        "MPParagraphElement:861BBBD1-8287-4875-85BE-9BD19E300C36"
+      ],
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603947.051511,
+      "path" : [
+        "MPSection:3D7588EF-0A74-4F02-AD69-655B1031BE95"
+      ],
+      "priority" : 1,
+      "updatedAt" : 1445603947.060878
+    },
+    {
+      "updatedAt" : 1445603948.012211,
+      "category" : "MPSectionCategory:author-contributions",
+      "objectType" : "MPSection",
+      "_rev" : "2-693747750d70a34b81bfd51377bf015a",
+      "_id" : "MPSection:3FAE3F54-6E70-4989-980C-B04D76E149C9",
+      "firstElementPlaceholderString" : "In order to give appropriate credit to each author of a paper, the individual contributions of authors to the manuscript should be specified in this section.",
+      "title" : "Author contributions",
+      "path" : [
+        "MPSection:3FAE3F54-6E70-4989-980C-B04D76E149C9"
+      ],
+      "priority" : 8,
+      "createdAt" : 1445603948.004722,
+      "elementIDs" : [
+        "MPParagraphElement:95923A1D-47BF-4FB4-BFB6-F2D71724ACFD"
+      ],
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
+    },
+    {
+      "updatedAt" : 1445607515.283467,
+      "category" : "MPSectionCategory:introduction",
+      "objectType" : "MPSection",
+      "_rev" : "3-4da06fc019bc9d30430e7aec9e8346e4",
+      "_id" : "MPSection:44EB7A3A-0A0A-4C54-8447-1F6D5347559F",
+      "firstElementPlaceholderString" : "The Introduction section should be written in a way that is accessible to researchers without specialist knowledge in that area and must clearly state - and, if helpful, illustrate - the background to the research and its aims. The section should end with a brief statement of what is being reported in the article.",
+      "title" : "Introduction",
+      "path" : [
+        "MPSection:44EB7A3A-0A0A-4C54-8447-1F6D5347559F"
+      ],
+      "priority" : 2,
+      "createdAt" : 1445603947.084175,
+      "elementIDs" : [
+        "MPParagraphElement:66EAA24F-F3DC-4DAE-89C6-8A9DE302C2FD",
+        "MPParagraphElement:F1D8EE46-C15D-44D3-A467-7DDC0668A385",
+        "MPParagraphElement:E0F0C5BA-37E0-40F2-89B5-C76C16480A14"
+      ],
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
+    },
+    {
+      "updatedAt" : 1445603947.942014,
+      "category" : "MPSectionCategory:abbreviations",
+      "objectType" : "MPSection",
+      "_rev" : "2-bbc21455394b25149622b1c27f33f74f",
+      "_id" : "MPSection:5197A5CC-52DA-496F-A40D-274D59C80533",
+      "firstElementPlaceholderString" : "If abbreviations are used in the text they should be defined in the text at first use, and a list of abbreviations can be provided, which should precede the competing interests and authors' contributions.",
+      "title" : "Abbreviations",
+      "path" : [
+        "MPSection:5197A5CC-52DA-496F-A40D-274D59C80533"
+      ],
+      "priority" : 6,
+      "createdAt" : 1445603947.934356,
+      "elementIDs" : [
+        "MPParagraphElement:98ECA700-D7BD-4133-8094-A21291C9BC9A"
+      ],
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
+    },
+    {
+      "_id" : "MPSection:5F51E60F-C38F-4DB9-B5FD-427AEE97C7A8",
+      "category" : "MPSectionCategory:cover-letter",
+      "objectType" : "MPSection",
+      "_rev" : "2-3d37607f17bd8b0cf0ddbe71ed3e3fda",
+      "title" : "Cover Letter",
+      "elementIDs" : [
+        "MPParagraphElement:CEBA6B34-D23C-4F64-B03D-A1F7A38D9C6A"
+      ],
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603948.059718,
+      "path" : [
+        "MPSection:5F51E60F-C38F-4DB9-B5FD-427AEE97C7A8"
+      ],
+      "priority" : 10,
+      "updatedAt" : 1445603948.066638
+    },
+    {
+      "updatedAt" : 1445603947.180914,
+      "category" : "MPSectionCategory:acknowledgement",
+      "objectType" : "MPSection",
+      "_rev" : "2-15b17d13089181cf59653c2a91ae9aa7",
+      "_id" : "MPSection:640E517E-5F30-41FD-9883-196E5C5C4E6E",
+      "firstElementPlaceholderString" : "Please acknowledge anyone who contributed towards the article by making substantial contributions to conception, design, acquisition of data, or analysis and interpretation of data, or who was involved in drafting the manuscript or revising it critically for important intellectual content, but who does not meet the criteria for authorship. Please also include the source(s) of funding for each author, and for the manuscript preparation. Authors must describe the role of the funding body, if any, in design, in the collection, analysis, and interpretation of data; in the writing of the manuscript; and in the decision to submit the manuscript for publication. Please also acknowledge anyone who contributed materials essential for the study. If a language editor has made significant revision of the manuscript, we recommend that you acknowledge the editor by name, where possible.\n\nAuthors should obtain permission to acknowledge from all those mentioned in the Acknowledgements section.",
+      "title" : "Acknowledgments",
+      "path" : [
+        "MPSection:640E517E-5F30-41FD-9883-196E5C5C4E6E"
+      ],
+      "priority" : 5,
+      "createdAt" : 1445603947.172196,
+      "elementIDs" : [
+        "MPParagraphElement:DC178C03-FCFB-4571-AF39-BE8A8393036B"
+      ],
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
+    },
+    {
+      "collection" : "sections",
+      "category" : "MPSectionCategory:abstract",
+      "updatedAt" : 1445603947.015254,
+      "objectType" : "MPSection",
+      "_rev" : "5-1f0e73dbd414f921836335add9ff9f8f",
+      "_id" : "MPSection:916E337A-8E01-4963-AF49-BE8C7DC6C2A9",
+      "firstElementPlaceholderString" : "A short, unstructured, single paragraph summary of the major points raised, making evident the key work highlighted in the article.",
+      "title" : "Abstract",
+      "path" : [
+        "MPSection:916E337A-8E01-4963-AF49-BE8C7DC6C2A9"
+      ],
+      "priority" : 0,
+      "maxWordCountRequirement" : "MPMaximumSectionWordCountRequirement:F517FC5E-1B51-454E-A0EA-F42274BC4CE9",
+      "createdAt" : 1445603946.936199,
+      "elementIDs" : [
+        "MPParagraphElement:D3DDCDF1-25D7-4A61-8326-16E04608DC1D",
+        "MPParagraphElement:43E62575-C163-447F-889B-055F4CABD8DD"
+      ],
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
+    },
+    {
+      "updatedAt" : 1445603947.150543,
+      "category" : "MPSectionCategory:conclusions",
+      "objectType" : "MPSection",
+      "_rev" : "2-d6a2f43427d53d0726f4b54c4a30f2d3",
+      "_id" : "MPSection:E3D67007-0EDE-487B-B714-6F004A58F4A3",
+      "firstElementPlaceholderString" : "This should state clearly the main conclusions of the research and give a clear explanation of their importance and relevance. Summary illustrations may be included.",
+      "title" : "Conclusions",
+      "path" : [
+        "MPSection:E3D67007-0EDE-487B-B714-6F004A58F4A3"
+      ],
+      "priority" : 4,
+      "createdAt" : 1445603947.14102,
+      "elementIDs" : [
+        "MPParagraphElement:E08ADE2C-E46E-4FB3-BCF4-B756624E234E"
+      ],
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
+    },
+    {
+      "_id" : "MPSection:FA9A33D4-490F-406D-84E8-2BDA22A0F52D",
+      "category" : "MPSectionCategory:review",
+      "objectType" : "MPSection",
+      "_rev" : "2-47b31ec489522f8fb05554f64ab6b0c1",
+      "title" : "Review",
+      "elementIDs" : [
+        "MPParagraphElement:FFE0BB1B-CCF9-4114-BF8C-089E989A9332"
+      ],
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603947.112877,
+      "path" : [
+        "MPSection:FA9A33D4-490F-406D-84E8-2BDA22A0F52D"
+      ],
+      "priority" : 3,
+      "updatedAt" : 1445603947.121167
+    }
+  ],
+  "bibliography-metadata" : {
+    "_id" : "MPMetadata:bibliography"
+  },
+  "keywords" : [
+    {
+      "_id" : "MPResearchField:sociology",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-80f368807815490581e45a21a2991105",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512818,
+      "createdAt" : 1444840742.512818,
+      "priority" : 1100,
+      "name" : "Sociology"
+    },
+    {
+      "_id" : "MPResearchField:math",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-2043b5e5513c1dd689786d7796b3b81c",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512816,
+      "createdAt" : 1444840742.512816,
+      "priority" : 1050,
+      "name" : "Math"
+    },
+    {
+      "_id" : "MPResearchField:theology",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-de9a321743a69b022c7b1fc674337271",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512814,
+      "createdAt" : 1444840742.512814,
+      "priority" : 1000,
+      "name" : "Theology"
+    },
+    {
+      "_id" : "MPResearchField:psychology",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-daa499f8267966a4b478a45d860ccae0",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512813,
+      "createdAt" : 1444840742.512813,
+      "priority" : 975,
+      "name" : "Psychology"
+    },
+    {
+      "_id" : "MPResearchField:philosophy",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-63f4d18cb115f68699a36b57cdbbf8ae",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512811,
+      "createdAt" : 1444840742.512811,
+      "priority" : 950,
+      "name" : "Philosophy"
+    },
+    {
+      "_id" : "MPResearchField:social_science",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-75df26ac4e44514ba9b03c4dd13e55c0",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512809,
+      "createdAt" : 1444840742.512809,
+      "priority" : 900,
+      "name" : "Social science"
+    },
+    {
+      "_id" : "MPResearchField:political_science",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-3e2b972dc39e78a556b172a7bb326784",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512807,
+      "createdAt" : 1444840742.512807,
+      "priority" : 850,
+      "name" : "Political science"
+    },
+    {
+      "_id" : "MPResearchField:linguistics",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-eaeb7a487af56ae35480be1d1e3a8dbd",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512806,
+      "createdAt" : 1444840742.512806,
+      "priority" : 800,
+      "name" : "Linguistics"
+    },
+    {
+      "_id" : "MPResearchField:communications",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-b8440c499173812bebc4de621312f5e2",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512804,
+      "createdAt" : 1444840742.512804,
+      "priority" : 750,
+      "name" : "Communications"
+    },
+    {
+      "_id" : "MPResearchField:physics",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-49f54cbadb4342a0bc5ed1b34f469c41",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512802,
+      "createdAt" : 1444840742.512802,
+      "priority" : 700,
+      "name" : "Physics"
+    },
+    {
+      "_id" : "MPResearchField:medicine",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-51ba64614566c458d25e8e339b00adb8",
+      "bundled" : true,
+      "updatedAt" : 1444840742.5128,
+      "createdAt" : 1444840742.5128,
+      "priority" : 650,
+      "name" : "Medicine"
+    },
+    {
+      "_id" : "MPResearchField:geology",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-7b271474d6a4e27c12e460d9b9a98aa5",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512798,
+      "createdAt" : 1444840742.512798,
+      "priority" : 600,
+      "name" : "Geology"
+    },
+    {
+      "_id" : "MPResearchField:generic-base",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-65ee26901d445a3386358c4b65e6be44",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512796,
+      "createdAt" : 1444840742.512796,
+      "priority" : 550,
+      "name" : "Generic base"
+    },
+    {
+      "_id" : "MPResearchField:engineering",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-bdf9ac85ea4ce254f9429dbbae3c726b",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512795,
+      "createdAt" : 1444840742.512795,
+      "priority" : 500,
+      "name" : "Engineering"
+    },
+    {
+      "_id" : "MPResearchField:chemistry",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-854fa39c0fe94974d63a2e676461289a",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512793,
+      "createdAt" : 1444840742.512793,
+      "priority" : 450,
+      "name" : "Chemistry"
+    },
+    {
+      "_id" : "MPResearchField:geography",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-9c51ca309225b8a9ce2654e4f567e8b9",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512791,
+      "createdAt" : 1444840742.512791,
+      "priority" : 400,
+      "name" : "Geography"
+    },
+    {
+      "_id" : "MPResearchField:zoology",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-42933fc6253afa0982929170f5655c54",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512789,
+      "createdAt" : 1444840742.512789,
+      "priority" : 350,
+      "name" : "Zoology"
+    },
+    {
+      "_id" : "MPResearchField:science",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-816d40f799983685c6432738e12402e7",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512787,
+      "createdAt" : 1444840742.512787,
+      "priority" : 300,
+      "name" : "Science"
+    },
+    {
+      "_id" : "MPResearchField:botany",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-1207a7f409ba95fe49ddd26fa4f01cb6",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512786,
+      "createdAt" : 1444840742.512786,
+      "priority" : 250,
+      "name" : "Botany"
+    },
+    {
+      "_id" : "MPResearchField:biology",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-8d7a8face0ba73fbb6d38278e06b4d38",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512784,
+      "createdAt" : 1444840742.512784,
+      "priority" : 200,
+      "name" : "Biology"
+    },
+    {
+      "_id" : "MPResearchField:astronomy",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-578f9ae81bd2c8a4087478a65433d7df",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512781,
+      "createdAt" : 1444840742.512781,
+      "priority" : 150,
+      "name" : "Astronomy"
+    },
+    {
+      "_id" : "MPResearchField:anthropology",
+      "objectType" : "MPResearchField",
+      "_rev" : "1-eb1e84ae0b154f8e05c6cc1f067e5b91",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512776,
+      "createdAt" : 1444840742.512776,
+      "priority" : 100,
+      "name" : "Anthropology"
+    },
+    {
+      "_id" : "MPStatusLabel:proof",
+      "color" : "MPColor:blue",
+      "objectType" : "MPStatusLabel",
+      "_rev" : "1-0d83a8986b7792239e0291fbe8ca04a2",
+      "bundled" : true,
+      "updatedAt" : 1444840742.51277,
+      "createdAt" : 1444840742.51277,
+      "priority" : 50,
+      "name" : "Proof"
+    },
+    {
+      "_id" : "MPStatusLabel:draft",
+      "color" : "MPColor:verylightblue",
+      "objectType" : "MPStatusLabel",
+      "_rev" : "1-a10e97e696ddacbbe0eea867a3a077de",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512767,
+      "createdAt" : 1444840742.512767,
+      "priority" : 40,
+      "name" : "Draft"
+    },
+    {
+      "_id" : "MPStatusLabel:ongoing",
+      "color" : "MPColor:gray",
+      "objectType" : "MPStatusLabel",
+      "_rev" : "1-1956a11355fbbaf1b57a27329550039d",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512763,
+      "createdAt" : 1444840742.512763,
+      "priority" : 30,
+      "name" : "Ongoing"
+    },
+    {
+      "_id" : "MPStatusLabel:started",
+      "color" : "MPColor:verylightgray",
+      "objectType" : "MPStatusLabel",
+      "_rev" : "1-a61b73a95ece290fff05894bfcc7e095",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512759,
+      "createdAt" : 1444840742.512759,
+      "priority" : 20,
+      "name" : "Started"
+    },
+    {
+      "_id" : "MPStatusLabel:done",
+      "color" : "MPColor:green",
+      "objectType" : "MPStatusLabel",
+      "_rev" : "1-5980913a36aa9a082a2e6e6c63bb5c7e",
+      "bundled" : true,
+      "updatedAt" : 1444840742.512746,
+      "createdAt" : 1444840742.512746,
+      "priority" : 10,
+      "name" : "Done"
+    }
+  ],
+  "affiliations" : [
+    {
+      "county" : "São Paulo",
+      "_id" : "MPAffiliation:D1A19EDD-E442-465C-AF90-9319231AE32F",
+      "_rev" : "2-4914d6018974f6afa16f85b838979976",
+      "objectType" : "MPAffiliation",
+      "country" : "Brazil",
+      "city" : "São Paulo",
+      "institution" : "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" ",
+      "updatedAt" : 1445605175.970374,
+      "createdAt" : 1445605088.227626,
+      "department" : "Núcleo de Computação Científica"
+    },
+    {
+      "county" : "SP",
+      "_id" : "MPAffiliation:1141F046-D75C-4E01-A0D5-C6B5E8DC1BD7",
+      "_rev" : "2-ce1f0e1f9e313d8005cd31b7a711fea4",
+      "objectType" : "MPAffiliation",
+      "country" : "Brazil",
+      "city" : "São Paulo",
+      "institution" : "Universidade de São Paulo",
+      "updatedAt" : 1445605248.317333,
+      "createdAt" : 1445605181.451009,
+      "department" : "LAHPC - Laboratory of Architecture and High Performance Computing"
+    }
+  ],
+  "snapshots-metadata" : {
+    "_id" : "MPMetadata:snapshots"
+  },
+  "sections-metadata" : {
+    "_id" : "MPMetadata:sections"
+  },
+  "elements" : [
+    {
+      "_id" : "MPParagraphElement:43E62575-C163-447F-889B-055F4CABD8DD",
+      "paragraphStyle" : "MPParagraphStyle:5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE",
+      "elementType" : "p",
+      "objectType" : "MPParagraphElement",
+      "id" : "MPParagraphElement:43E62575-C163-447F-889B-055F4CABD8DD",
+      "collection" : "elements",
+      "contents" : "<p id=\"MPParagraphElement:43E62575-C163-447F-889B-055F4CABD8DD\" class=\"MPElement MPParagraphStyle_5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE\" data-object-type=\"MPParagraphElement\">Diferentes estratégias<\/p>",
+      "sessionID" : "bb0caaff-ca20-403b-b460-9b77a1fb3015",
+      "createdAt" : 1445607772,
+      "_rev" : "3-de357dfed1e93e0b66fd36e7c5c05abe"
+    },
+    {
+      "_id" : "MPParagraphElement:4A5A2369-6846-49FC-B4A5-07DE9CEBE91E",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "placeholderInnerHTML" : "You may choose to use this section to include any relevant information about the author(s) that may aid the reader's interpretation of the article, and understand the standpoint of the author(s). This may include details about the authors' qualifications, current positions they hold at institutions or societies, or any other relevant background information. Please refer to authors using their initials. Note this section should not be used to describe any competing interests.",
+      "_rev" : "1-e73218bb94326f91953eb0f3b4e01de0",
+      "contents" : "<p id=\"MPParagraphElement:4A5A2369-6846-49FC-B4A5-07DE9CEBE91E\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603947.978693,
+      "updatedAt" : 1445603947.978693
+    },
+    {
+      "_id" : "MPParagraphElement:66EAA24F-F3DC-4DAE-89C6-8A9DE302C2FD",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE",
+      "_rev" : "1-753c5bba65e4024462af3d805868857e",
+      "contents" : "<p id=\"MPParagraphElement:66EAA24F-F3DC-4DAE-89C6-8A9DE302C2FD\" class=\"MPElement\" data-object-type=\"MPParagraphElement\">A adesão de usuários de aplicações de Computação de Alto Desempenho (HPC - <em>High Performance Computing<\/em>), seja no ambito acadêmico ou corporativo não é comum. Isso ocorre devido a diversos fatores, como interconexão de rede lenta, ambiente computacional heterogêneo, sobrecarga da virtualização e compartilhamento de recursos. De fato, a computação na nuvem tem como principal argumento a redução de custos de manter um parque computacional complexo e, de forma geral, centros computacionais que tem a sua disposição supercomputadores são menos suscetíveis ao argumento do custo. Entretanto, usuários de aplicações HPC em centros computacionais de pequeno e médio porte (ex. Startups, pequenos laboratórios de pesquisa, etc) possuem maior sensibilidade a apelo da computação da nuvem e por essa razão mais suscetiveis a adotá-la.<\/p>",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445607515.275568,
+      "updatedAt" : 1445607515.275568
+    },
+    {
+      "_id" : "MPParagraphElement:861BBBD1-8287-4875-85BE-9BD19E300C36",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "placeholderInnerHTML" : "List of keywords relevant to the manuscript.",
+      "_rev" : "3-555ec28bb1f81950a160f1fe1cdecac0",
+      "contents" : "<p id=\"MPParagraphElement:861BBBD1-8287-4875-85BE-9BD19E300C36\" class=\"MPElement MPParagraphStyle_5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE\" data-object-type=\"MPParagraphElement\" data-placeholder-text=\"List of keywords relevant to the manuscript.\">HPC, Cloud, Communication, Message Passing, Characterization<\/p>",
+      "sessionID" : "bb0caaff-ca20-403b-b460-9b77a1fb3015",
+      "createdAt" : 1445603947.058117,
+      "updatedAt" : 1445603947.058117,
+      "collection" : "elements"
+    },
+    {
+      "_id" : "MPParagraphElement:95923A1D-47BF-4FB4-BFB6-F2D71724ACFD",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "placeholderInnerHTML" : "In order to give appropriate credit to each author of a paper, the individual contributions of authors to the manuscript should be specified in this section.",
+      "_rev" : "1-fbd8d27e6ac1aedc35c28514911cb100",
+      "contents" : "<p id=\"MPParagraphElement:95923A1D-47BF-4FB4-BFB6-F2D71724ACFD\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603948.009941,
+      "updatedAt" : 1445603948.009941
+    },
+    {
+      "_id" : "MPParagraphElement:98ECA700-D7BD-4133-8094-A21291C9BC9A",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "placeholderInnerHTML" : "If abbreviations are used in the text they should be defined in the text at first use, and a list of abbreviations can be provided, which should precede the competing interests and authors' contributions.",
+      "_rev" : "1-8a6c7956d6a199982a11178cef3d534d",
+      "contents" : "<p id=\"MPParagraphElement:98ECA700-D7BD-4133-8094-A21291C9BC9A\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603947.939745,
+      "updatedAt" : 1445603947.939745
+    },
+    {
+      "_id" : "MPParagraphElement:CEBA6B34-D23C-4F64-B03D-A1F7A38D9C6A",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "placeholderInnerHTML" : "A letter sent along with your manuscript to explain it.",
+      "_rev" : "1-974a772150dc9398798693e54c11537c",
+      "contents" : "<p id=\"MPParagraphElement:CEBA6B34-D23C-4F64-B03D-A1F7A38D9C6A\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603948.064522,
+      "updatedAt" : 1445603948.064522
+    },
+    {
+      "_id" : "MPParagraphElement:D3DDCDF1-25D7-4A61-8326-16E04608DC1D",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "placeholderInnerHTML" : "A short, unstructured, single paragraph summary of the major points raised, making evident the key work highlighted in the article.",
+      "_rev" : "133-374fd6cc185fca364a46c99f241c17b3",
+      "contents" : "<p id=\"MPParagraphElement:D3DDCDF1-25D7-4A61-8326-16E04608DC1D\" class=\"MPElement MPParagraphStyle_5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE\" data-object-type=\"MPParagraphElement\" data-placeholder-text=\"A short, unstructured, single paragraph summary of the major points raised, making evident the key work highlighted in the article.\">O uso de computação na nuvem por usuários de Computação de Alto Desmpenho ((HPC -\n      <em>High Performance Computing<\/em>) ainda sofre muita resistência, em grande medida, por conta da grande degradação de desempenho que essas aplicações sofrem ao serem executadas na nuvem. Entre os principais fatores que levam à degradação, pode-se citar (1) interconexão de rede lenta, que utiliza hardaware commodity, (2) ambiente heterôgeneo com diferentes gerações de processadores, (3) compartilhamento do hardware entre diferentes usuários e (4) sobrecarga da virtualização.<\/p>",
+      "sessionID" : "bb0caaff-ca20-403b-b460-9b77a1fb3015",
+      "createdAt" : 1445603946.970548,
+      "updatedAt" : 1445607682.396542,
+      "collection" : "elements"
+    },
+    {
+      "_id" : "MPParagraphElement:D52E5BDB-7A69-4882-B27B-CBAB4C57867D",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "placeholderInnerHTML" : "A competing interest exists when your interpretation of data or presentation of information may be influenced by your personal or financial relationship with other people or organizations. Authors must disclose any financial competing interests; they should also reveal any non-financial competing interests that may cause them embarrassment were they to become public after the publication of the manuscript.\n\nAuthors are required to complete a declaration of competing interests. All competing interests that are declared will be listed at the end of published articles. Where an author gives no competing interests, the listing will read 'The author(s) declare that they have no competing interests'.",
+      "_rev" : "1-34ff0e07adfc804bb1fbb885e403c588",
+      "contents" : "<p id=\"MPParagraphElement:D52E5BDB-7A69-4882-B27B-CBAB4C57867D\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603948.036781,
+      "updatedAt" : 1445603948.036781
+    },
+    {
+      "_id" : "MPParagraphElement:DC178C03-FCFB-4571-AF39-BE8A8393036B",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "placeholderInnerHTML" : "Please acknowledge anyone who contributed towards the article by making substantial contributions to conception, design, acquisition of data, or analysis and interpretation of data, or who was involved in drafting the manuscript or revising it critically for important intellectual content, but who does not meet the criteria for authorship. Please also include the source(s) of funding for each author, and for the manuscript preparation. Authors must describe the role of the funding body, if any, in design, in the collection, analysis, and interpretation of data; in the writing of the manuscript; and in the decision to submit the manuscript for publication. Please also acknowledge anyone who contributed materials essential for the study. If a language editor has made significant revision of the manuscript, we recommend that you acknowledge the editor by name, where possible.\n\nAuthors should obtain permission to acknowledge from all those mentioned in the Acknowledgements section.",
+      "_rev" : "1-2f546e264f744dfc1662033cc752bb12",
+      "contents" : "<p id=\"MPParagraphElement:DC178C03-FCFB-4571-AF39-BE8A8393036B\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603947.178004,
+      "updatedAt" : 1445603947.178004
+    },
+    {
+      "_id" : "MPParagraphElement:E08ADE2C-E46E-4FB3-BCF4-B756624E234E",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "placeholderInnerHTML" : "This should state clearly the main conclusions of the research and give a clear explanation of their importance and relevance. Summary illustrations may be included.",
+      "_rev" : "1-88603d31abf2ef6a7b280518612f1a00",
+      "contents" : "<p id=\"MPParagraphElement:E08ADE2C-E46E-4FB3-BCF4-B756624E234E\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603947.147631,
+      "updatedAt" : 1445603947.147631
+    },
+    {
+      "_id" : "MPParagraphElement:E0F0C5BA-37E0-40F2-89B5-C76C16480A14",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "placeholderInnerHTML" : "The Introduction section should be written in a way that is accessible to researchers without specialist knowledge in that area and must clearly state - and, if helpful, illustrate - the background to the research and its aims. The section should end with a brief statement of what is being reported in the article.",
+      "_rev" : "1-932316b26d50d76e12a9f0b858c66cfc",
+      "contents" : "<p id=\"MPParagraphElement:E0F0C5BA-37E0-40F2-89B5-C76C16480A14\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603947.089459,
+      "updatedAt" : 1445603947.089459
+    },
+    {
+      "_id" : "MPParagraphElement:F1D8EE46-C15D-44D3-A467-7DDC0668A385",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE",
+      "_rev" : "1-5572e9d2da39c281340b298924cca813",
+      "contents" : "<p id=\"MPParagraphElement:F1D8EE46-C15D-44D3-A467-7DDC0668A385\" class=\"MPElement\" data-object-type=\"MPParagraphElement\">Apesar do custo da computação na nuvem ser um atrativo, sua adoção ainda sofre grande resistência por parte de usuários de pequeno e médio porte de aplicações HPC em razão da degradação do desempenho. Em grande medida, a degradação de desempenho de aplicações HPC na nuvem deve-se ao uso de compartilhado de recursos computacionais, principalmente de interfaces de rede.<\/p>",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445607515.277981,
+      "updatedAt" : 1445607515.277981
+    },
+    {
+      "_id" : "MPParagraphElement:FFE0BB1B-CCF9-4114-BF8C-089E989A9332",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "placeholderInnerHTML" : "The body of a review article",
+      "_rev" : "1-ac4a78018154e34c72777c3f77b1874c",
+      "contents" : "<p id=\"MPParagraphElement:FFE0BB1B-CCF9-4114-BF8C-089E989A9332\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "createdAt" : 1445603947.11905,
+      "updatedAt" : 1445603947.11905
+    }
+  ],
+  "manuscripts" : [
+    {
+      "manuscriptType" : 1,
+      "_id" : "MPManuscript:694437E0-4476-4F6B-B934-3795A04E7F13",
+      "_rev" : "20-6163b0dd617794a1442ed2e202b22551",
+      "objectType" : "MPManuscript",
+      "targetBundle" : "MPBundle:www-zotero-org-styles-harvard1",
+      "title" : "Untitled Acta Neuropathologica Communications Review",
+      "collection" : "Manuscripts",
+      "sessionID" : "bb0caaff-ca20-403b-b460-9b77a1fb3015",
+      "updatedAt" : 1445603946.590584,
+      "createdAt" : 1445603946.590584
+    }
+  ]
+}
