@@ -5,24 +5,24 @@
   "manuscript" : [
     {
       "county" : "SP",
+      "city" : "São Paulo",
+      "country" : "Brazil",
+      "institution" : "Universidade de São Paulo",
+      "objectType" : "MPAffiliation",
       "_id" : "MPAffiliation:1141F046-D75C-4E01-A0D5-C6B5E8DC1BD7",
       "_rev" : "2-ce1f0e1f9e313d8005cd31b7a711fea4",
-      "objectType" : "MPAffiliation",
-      "country" : "Brazil",
-      "city" : "São Paulo",
-      "institution" : "Universidade de São Paulo",
       "updatedAt" : 1445605248.317333,
       "createdAt" : 1445605181.451009,
       "department" : "LAHPC - Laboratory of Architecture and High Performance Computing"
     },
     {
       "county" : "São Paulo",
+      "city" : "São Paulo",
+      "country" : "Brazil",
+      "institution" : "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" ",
+      "objectType" : "MPAffiliation",
       "_id" : "MPAffiliation:D1A19EDD-E442-465C-AF90-9319231AE32F",
       "_rev" : "2-4914d6018974f6afa16f85b838979976",
-      "objectType" : "MPAffiliation",
-      "country" : "Brazil",
-      "city" : "São Paulo",
-      "institution" : "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" ",
       "updatedAt" : 1445605175.970374,
       "createdAt" : 1445605088.227626,
       "department" : "Núcleo de Computação Científica"
@@ -31,8 +31,8 @@
       "updatedAt" : 1445603948.122053,
       "objectType" : "MPAuxiliaryObjectReferenceStyle",
       "_rev" : "1-019b72c0f04656e3ed38c0bebcca37c5",
-      "priority" : 10,
       "_id" : "MPAuxiliaryObjectReferenceStyle:88C57929-DD67-464B-875D-6F4DF579CA3D",
+      "priority" : 10,
       "prototype" : "MPAuxiliaryObjectReferenceStyle:default",
       "title" : "Default",
       "locked" : true,
@@ -53,8 +53,8 @@
       "updatedAt" : 1445603948.156649,
       "objectType" : "MPBorderStyle",
       "_rev" : "1-2ec6bce099ceefc0006724efee47bdc1",
-      "priority" : 20,
       "_id" : "MPBorderStyle:39AC61BD-A8EE-4298-A796-C5F74D1DDA5E",
+      "priority" : 20,
       "prototype" : "MPBorderStyle:E28AA90C-4379-434F-AF58-E2D8C8ED1EB4",
       "title" : "Dashed",
       "pattern" : [
@@ -83,8 +83,8 @@
       "updatedAt" : 1445603948.132393,
       "objectType" : "MPBorderStyle",
       "_rev" : "1-7c345d78d96ff66528ac378eb9fedc6e",
-      "priority" : 30,
       "_id" : "MPBorderStyle:B155F769-A698-47F3-A4D6-F1AD806759C6",
+      "priority" : 30,
       "prototype" : "MPBorderStyle:00FD8810-B85D-4FC5-8C23-8022A36E07BD",
       "title" : "Dotted",
       "pattern" : [
@@ -100,8 +100,8 @@
       "updatedAt" : 1445603948.146326,
       "objectType" : "MPBorderStyle",
       "_rev" : "1-c00136d0ee92d7476172fa00d9fc62e0",
-      "priority" : 40,
       "_id" : "MPBorderStyle:FF5EE2F0-A580-4CC6-AB88-A87C3F51D824",
+      "priority" : 40,
       "prototype" : "MPBorderStyle:16583262-A260-4E35-A508-3F960F70074F",
       "title" : "Double Lines",
       "locked" : true,
@@ -175,8 +175,8 @@
       "updatedAt" : 1445603948.18082,
       "objectType" : "MPColor",
       "_rev" : "1-3a1a8080d24b5385e931780f341a22d1",
-      "priority" : 110,
       "_id" : "MPColor:14EA2491-4623-4482-AB5D-24D33E0B761A",
+      "priority" : 110,
       "prototype" : "MPColor:red",
       "title" : "Red",
       "value" : "#ff0000",
@@ -202,8 +202,8 @@
       "updatedAt" : 1445603948.184093,
       "objectType" : "MPColor",
       "_rev" : "1-408d65a78eceb736701e444a8e60c45e",
-      "priority" : 50,
       "_id" : "MPColor:39AC45E2-AFFE-4C9F-9363-5440D29E0A7C",
+      "priority" : 50,
       "prototype" : "MPColor:verylightblue",
       "title" : "Very Light Blue",
       "value" : "#f0f0ff",
@@ -216,8 +216,8 @@
       "updatedAt" : 1445603948.173814,
       "objectType" : "MPColor",
       "_rev" : "1-37f73a2224c5ee1a5d3a0bce869db449",
-      "priority" : 50,
       "_id" : "MPColor:6E4E1194-E43F-4B6D-B8C8-5818E1BBE71B",
+      "priority" : 50,
       "prototype" : "MPColor:gray",
       "title" : "Gray",
       "value" : "#b0b0b0",
@@ -243,8 +243,8 @@
       "updatedAt" : 1445603948.190805,
       "objectType" : "MPColor",
       "_rev" : "1-3bdbad51bb809e64e3994168895cc4e4",
-      "priority" : 100,
       "_id" : "MPColor:87C255CC-AEBE-4EF8-BAD9-CB3D5ECC48C0",
+      "priority" : 100,
       "prototype" : "MPColor:white",
       "title" : "White",
       "value" : "#ffffff",
@@ -257,8 +257,8 @@
       "updatedAt" : 1445603948.170438,
       "objectType" : "MPColor",
       "_rev" : "1-e3dd5fa60ed374722ec59f07280b668e",
-      "priority" : 130,
       "_id" : "MPColor:B0406DE8-7715-492B-8884-B3B39BFFC01A",
+      "priority" : 130,
       "prototype" : "MPColor:blue",
       "title" : "Blue",
       "value" : "#0000ff",
@@ -297,8 +297,8 @@
       "updatedAt" : 1445603948.167056,
       "objectType" : "MPColor",
       "_rev" : "1-1dd668a08dc96f8b4c8a23a4e387395b",
-      "priority" : 10,
       "_id" : "MPColor:C79E0490-CC9F-4415-8273-5B2FC24EB174",
+      "priority" : 10,
       "prototype" : "MPColor:black",
       "title" : "Black",
       "value" : "#000000",
@@ -324,8 +324,8 @@
       "updatedAt" : 1445603948.187483,
       "objectType" : "MPColor",
       "_rev" : "1-f7606b1340f2a2489b5a44c2cd0f43a8",
-      "priority" : 50,
       "_id" : "MPColor:F112825C-4DFF-4BF0-A3D9-4760A3178B77",
+      "priority" : 50,
       "prototype" : "MPColor:verylightgray",
       "title" : "Very Light Gray",
       "value" : "#f4f4f4",
@@ -364,8 +364,8 @@
       "updatedAt" : 1445603948.17727,
       "objectType" : "MPColor",
       "_rev" : "1-42c9178fb381a1ccc5d56a2e226102c3",
-      "priority" : 120,
       "_id" : "MPColor:FF0F7D55-96DC-4488-B1F3-01D690C1A5E0",
+      "priority" : 120,
       "prototype" : "MPColor:green",
       "title" : "Green",
       "value" : "#00ff00",
@@ -430,8 +430,8 @@
       "updatedAt" : 1445603948.232622,
       "objectType" : "MPFigureLayout",
       "_rev" : "1-b1276b5b07679b3858a585096b8b3ef3",
-      "priority" : 25,
       "_id" : "MPFigureLayout:01F3D30E-5896-4E05-A708-9196B20D82BD",
+      "priority" : 25,
       "prototype" : "MPFigureLayout:two_figures_stacked",
       "title" : "Two Figures Stacked",
       "columns" : 1,
@@ -445,8 +445,8 @@
       "updatedAt" : 1445603948.211951,
       "objectType" : "MPFigureLayout",
       "_rev" : "1-c76dcd6f4e0a27f754493c672b658c1e",
-      "priority" : 10,
       "_id" : "MPFigureLayout:18CA985E-F903-42EA-BB46-E88C2C2410C0",
+      "priority" : 10,
       "prototype" : "MPFigureLayout:default",
       "title" : "Single Figure",
       "columns" : 1,
@@ -460,8 +460,8 @@
       "updatedAt" : 1445603948.222368,
       "objectType" : "MPFigureLayout",
       "_rev" : "1-bf6af27726d417e877ceda21e12a2022",
-      "priority" : 30,
       "_id" : "MPFigureLayout:22E1E87A-8CC4-42E6-B099-64EEF532D2E3",
+      "priority" : 30,
       "prototype" : "MPFigureLayout:three_figures",
       "title" : "Three Figures in a Row",
       "columns" : 3,
@@ -475,8 +475,8 @@
       "updatedAt" : 1445603948.22902,
       "objectType" : "MPFigureLayout",
       "_rev" : "1-d87b4a0a2d397cebdb9c342da4e8d259",
-      "priority" : 20,
       "_id" : "MPFigureLayout:4151DD2C-DA3F-48C1-996E-50697F131B81",
+      "priority" : 20,
       "prototype" : "MPFigureLayout:two_figures",
       "title" : "Two Figures Side by Side",
       "columns" : 2,
@@ -490,8 +490,8 @@
       "updatedAt" : 1445603948.218756,
       "objectType" : "MPFigureLayout",
       "_rev" : "1-5ee90744ba56d1efbe4f8b4b8b3a25cc",
-      "priority" : 90,
       "_id" : "MPFigureLayout:4A0678EB-9F90-47EE-87CB-7A48C8644966",
+      "priority" : 90,
       "prototype" : "MPFigureLayout:nine_figures",
       "title" : "Nine Figures (3×3)",
       "columns" : 3,
@@ -505,8 +505,8 @@
       "updatedAt" : 1445603948.204528,
       "objectType" : "MPFigureLayout",
       "_rev" : "1-3ffb971858d3b143a8cab5f490ad08fc",
-      "priority" : 65,
       "_id" : "MPFigureLayout:4DA53BBE-AB8B-42F9-9A90-47F0BA96E089",
+      "priority" : 65,
       "prototype" : "MPFigureLayout:2_by_3",
       "title" : "Six Figures (2×3)",
       "columns" : 2,
@@ -520,8 +520,8 @@
       "updatedAt" : 1445603948.20821,
       "objectType" : "MPFigureLayout",
       "_rev" : "1-fdf8246dd1ce7bd9b7d8c8c044f5d586",
-      "priority" : 60,
       "_id" : "MPFigureLayout:7768172D-2767-4F0E-9090-6E65EB2F4E1F",
+      "priority" : 60,
       "prototype" : "MPFigureLayout:3_by_2",
       "title" : "Six Figures (3×2)",
       "columns" : 3,
@@ -535,8 +535,8 @@
       "updatedAt" : 1445603948.225857,
       "objectType" : "MPFigureLayout",
       "_rev" : "1-ee000b313466af342c158a736e408199",
-      "priority" : 35,
       "_id" : "MPFigureLayout:A6E51119-D251-44C5-B200-64F9F2DF8BF9",
+      "priority" : 35,
       "prototype" : "MPFigureLayout:three_figures_stacked",
       "title" : "Three Figures Stacked",
       "columns" : 1,
@@ -550,8 +550,8 @@
       "updatedAt" : 1445603948.215483,
       "objectType" : "MPFigureLayout",
       "_rev" : "1-179f0f8cefb2fff63b216d38b6949b58",
-      "priority" : 40,
       "_id" : "MPFigureLayout:E8DEA769-606A-4833-81D0-B0083F6D62C7",
+      "priority" : 40,
       "prototype" : "MPFigureLayout:four_figures",
       "title" : "Four figures (2×2)",
       "columns" : 2,
@@ -701,13 +701,13 @@
     {
       "manuscriptType" : 1,
       "_id" : "MPManuscript:694437E0-4476-4F6B-B934-3795A04E7F13",
-      "_rev" : "20-6163b0dd617794a1442ed2e202b22551",
       "objectType" : "MPManuscript",
-      "title" : "Otimizando a Localização de MVs na Nuvem Através de Padrões de Comunicação",
+      "_rev" : "20-6163b0dd617794a1442ed2e202b22551",
       "collection" : "Manuscripts",
+      "title" : "Otimizando a Localização de MVs na Nuvem Através de Padrões de Comunicação",
       "sessionID" : "bb0caaff-ca20-403b-b460-9b77a1fb3015",
-      "updatedAt" : 1445603946.590584,
-      "createdAt" : 1445603946.590584
+      "createdAt" : 1445603946.590584,
+      "updatedAt" : 1445603946.590584
     },
     {
       "updatedAt" : 1445603948.253349,
@@ -1167,20 +1167,169 @@
     }
   ],
   "bibliography" : [
+    {
+      "page-first" : "1",
+      "title" : "Evaluating and Improving the Performance and Scheduling of HPC Applications in Cloud",
+      "volume" : "PP",
+      "_id" : "MPBibliographyItem:F5F9E080-91F0-4977-A3FC-A4A87FC896DB",
+      "citation-label" : "8B4AC528-4945-46C1-B854-23F8BF58328B",
+      "createdAt" : 1445906559.315085,
+      "issued" : {
+        "_id" : "MPBibliographicDate:1CA3C860-4EED-4F28-8AEF-2005B4760B73",
+        "objectType" : "MPBibliographicDate",
+        "date-parts" : [
+          [
+            2014,
+            1,
+            1
+          ]
+        ]
+      },
+      "originalIdentifier" : "8B4AC528-4945-46C1-B854-23F8BF58328B",
+      "DOI" : "10.1109\/TCC.2014.2339858",
+      "updatedAt" : 1445906559.315085,
+      "_attachments" : {
+        "originalData" : {
+          "stub" : true,
+          "length" : 1578,
+          "digest" : "sha1-NIinD+B+VVs0NLPiEQx0tg7JVBY=",
+          "revpos" : 1,
+          "content_type" : "application\/x-papers-citation-json"
+        }
+      },
+      "number" : 99,
+      "embeddedAuthors" : [
 
+      ],
+      "sourceIdentifier" : "com.mekentosj.papers.citations.xml",
+      "sourceUTI" : "com.mekentosj.citations.xml",
+      "_rev" : "1-0c3048bfc7caf975c8ed0e45fd5b8cda",
+      "collection-title" : "IEEE Transactions on Cloud Computing",
+      "objectType" : "MPBibliographyItem",
+      "URL" : "http:\/\/ieeexplore.ieee.org\/xpls\/abs_all.jsp?arnumber=6858018",
+      "author" : [
+        {
+          "given" : "A",
+          "_id" : "MPBibliographicName:1C2A493E-2664-40F3-A133-4BE6A8073DC3",
+          "objectType" : "MPBibliographicName",
+          "family" : "Gupta"
+        },
+        {
+          "given" : "P",
+          "_id" : "MPBibliographicName:8F052051-B16B-4216-A086-D91073D4F082",
+          "objectType" : "MPBibliographicName",
+          "family" : "Faraboschi"
+        },
+        {
+          "given" : "F",
+          "_id" : "MPBibliographicName:215398CF-99F4-425F-AEBF-EA07EDA3A28C",
+          "objectType" : "MPBibliographicName",
+          "family" : "Gioachin"
+        },
+        {
+          "given" : "L V",
+          "_id" : "MPBibliographicName:D97074C1-F55D-4F04-A4AE-3EA3F784A346",
+          "objectType" : "MPBibliographicName",
+          "family" : "Kalé"
+        },
+        {
+          "given" : "R",
+          "_id" : "MPBibliographicName:98F38757-88C8-448A-ABDA-71EBD8D2E3BB",
+          "objectType" : "MPBibliographicName",
+          "family" : "Kaufmann"
+        },
+        {
+          "given" : "B S",
+          "_id" : "MPBibliographicName:7111A897-04FA-4825-900E-0D87CB9FE514",
+          "objectType" : "MPBibliographicName",
+          "family" : "Lee"
+        },
+        {
+          "given" : "V",
+          "_id" : "MPBibliographicName:D5658290-BC42-45B9-9683-39A5B6573F71",
+          "objectType" : "MPBibliographicName",
+          "family" : "March"
+        },
+        {
+          "given" : "D",
+          "_id" : "MPBibliographicName:9A686086-B50C-4A02-8673-96F63B9227DA",
+          "objectType" : "MPBibliographicName",
+          "family" : "Milojicic"
+        },
+        {
+          "given" : "C H",
+          "_id" : "MPBibliographicName:4FDEFD5D-EE6D-4AE1-82F4-D9DAA8EFDF70",
+          "objectType" : "MPBibliographicName",
+          "family" : "Suen"
+        }
+      ]
+    },
+    {
+      "_id" : "MPCitation:7488BBE6-E487-47E6-8FD4-1E003B971A6F",
+      "containingElement" : "MPParagraphElement:66EAA24F-F3DC-4DAE-89C6-8A9DE302C2FD",
+      "embeddedCitationItems" : [
+        {
+          "_id" : "MPCitationItem:BDF4189C-67AD-4803-956F-9F72D125834C",
+          "objectType" : "MPCitationItem",
+          "bibliographyItem" : "MPBibliographyItem:F5F9E080-91F0-4977-A3FC-A4A87FC896DB"
+        }
+      ],
+      "objectType" : "MPCitation",
+      "_rev" : "1-f266267ff5935f7731dccc5427c5eb8d",
+      "collationType" : 0,
+      "createdAt" : 1445906559.34366,
+      "updatedAt" : 1445906559.34366
+    }
   ],
   "sections" : [
     {
-      "_id" : "MPParagraphElement:43E62575-C163-447F-889B-055F4CABD8DD",
+      "_id" : "MPBibliographyElement:865550E9-FB38-4B55-83CE-418345CEA9A4",
+      "objectType" : "MPBibliographyElement",
+      "elementType" : "div",
+      "id" : "MPBibliographyElement:865550E9-FB38-4B55-83CE-418345CEA9A4",
+      "collection" : "elements",
       "paragraphStyle" : "MPParagraphStyle:5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE",
-      "elementType" : "p",
+      "contents" : "<div class=\"csl-bib-body\" id=\"MPBibliographyElement:865550E9-FB38-4B55-83CE-418345CEA9A4\"><\/div>",
+      "placeholderInnerHTML" : "This bibliography updates automatically as you cite.",
+      "createdAt" : 1445906594,
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
+      "_rev" : "1-d124cce9af7cdde023019afcd598ad4e"
+    },
+    {
+      "_id" : "MPParagraphElement:0D1E3057-180B-4AC9-9A5F-FF8093989E25",
       "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "id" : "MPParagraphElement:0D1E3057-180B-4AC9-9A5F-FF8093989E25",
+      "collection" : "elements",
+      "paragraphStyle" : "MPParagraphStyle:5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE",
+      "contents" : "<p id=\"MPParagraphElement:0D1E3057-180B-4AC9-9A5F-FF8093989E25\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
+      "createdAt" : 1445906720,
+      "_rev" : "1-7ccf51d11bd86041ddd0a3b9dace8723"
+    },
+    {
+      "_id" : "MPParagraphElement:10B3B1B8-4788-4A6F-E908-D496137712FB",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
+      "id" : "MPParagraphElement:10B3B1B8-4788-4A6F-E908-D496137712FB",
+      "collection" : "elements",
+      "paragraphStyle" : "MPParagraphStyle:5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE",
+      "contents" : "<p id=\"MPParagraphElement:10B3B1B8-4788-4A6F-E908-D496137712FB\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
+      "createdAt" : 1445906712,
+      "_rev" : "1-0e19a835a69acdf68824f5b0febb5915"
+    },
+    {
+      "_id" : "MPParagraphElement:43E62575-C163-447F-889B-055F4CABD8DD",
+      "objectType" : "MPParagraphElement",
+      "elementType" : "p",
       "id" : "MPParagraphElement:43E62575-C163-447F-889B-055F4CABD8DD",
       "collection" : "elements",
-      "contents" : "<p id=\"MPParagraphElement:43E62575-C163-447F-889B-055F4CABD8DD\" class=\"MPElement MPParagraphStyle_5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE\" data-object-type=\"MPParagraphElement\">Diferentes estratégias<\/p>",
-      "sessionID" : "bb0caaff-ca20-403b-b460-9b77a1fb3015",
+      "paragraphStyle" : "MPParagraphStyle:5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE",
+      "contents" : "<p id=\"MPParagraphElement:43E62575-C163-447F-889B-055F4CABD8DD\" class=\"MPElement MPParagraphStyle_5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE\" data-object-type=\"MPParagraphElement\">Diferentes estratégias para viabilizar HPC na nuvem vem sendo discutidas e propostas. Em geral, pode-se classificar essas estratégias em <i>Cloud-Aware<\/i>, quando a aplicação HPC tem ciência de que está sendo executada em um ambiente na nuvem e de suas limitações ou <i>HPC-Aware<\/i>, que são estratégias que visam configurar a nuvem de forma otimizada para a execução de aplicações HPC. Neste trabalho, será apresentada uma solução que orbita as estratégias <i>HPC-Aware<\/i>, em que baseando-se no padrão de comunicação da aplicação, as Máquinas Virtuais (<i>VM - Virtual Machine<\/i>) serão realocadas em hospedeiros físicos com o objetivo de reduzir a sobrecarga inerente de um ambiente na nuvem para aplicações HPC. Nossa hipótese é que, dado um determinado padrão de comunicação poderiamos deixar MVs que trocam mensagens constantemente mais próximas (no mesmo hospedeiro ou no máximo a um hop de distância). Uma das possibilidades que também poderá ser avaliada é a alocação de MVs com padrões de comunicação incompatíveis entre si e separar MVs que estejam nessa situação.<\/p>",
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
       "createdAt" : 1445607772,
-      "_rev" : "3-de357dfed1e93e0b66fd36e7c5c05abe"
+      "_rev" : "124-203657776f0eb334fd2a1716ede10a2c"
     },
     {
       "_id" : "MPParagraphElement:4A5A2369-6846-49FC-B4A5-07DE9CEBE91E",
@@ -1199,9 +1348,10 @@
       "objectType" : "MPParagraphElement",
       "elementType" : "p",
       "paragraphStyle" : "MPParagraphStyle:5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE",
-      "_rev" : "1-753c5bba65e4024462af3d805868857e",
-      "contents" : "<p id=\"MPParagraphElement:66EAA24F-F3DC-4DAE-89C6-8A9DE302C2FD\" class=\"MPElement\" data-object-type=\"MPParagraphElement\">A adesão de usuários de aplicações de Computação de Alto Desempenho (HPC - <em>High Performance Computing<\/em>), seja no ambito acadêmico ou corporativo não é comum. Isso ocorre devido a diversos fatores, como interconexão de rede lenta, ambiente computacional heterogêneo, sobrecarga da virtualização e compartilhamento de recursos. De fato, a computação na nuvem tem como principal argumento a redução de custos de manter um parque computacional complexo e, de forma geral, centros computacionais que tem a sua disposição supercomputadores são menos suscetíveis ao argumento do custo. Entretanto, usuários de aplicações HPC em centros computacionais de pequeno e médio porte (ex. Startups, pequenos laboratórios de pesquisa, etc) possuem maior sensibilidade a apelo da computação da nuvem e por essa razão mais suscetiveis a adotá-la.<\/p>",
-      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "_rev" : "4-ec0be24a485159693d5f91cb35e37544",
+      "collection" : "elements",
+      "contents" : "<p id=\"MPParagraphElement:66EAA24F-F3DC-4DAE-89C6-8A9DE302C2FD\" class=\"MPElement MPParagraphStyle_5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE\" data-object-type=\"MPParagraphElement\">A adesão de usuários de aplicações de Computação de Alto Desempenho (HPC - <em>High Performance Computing<\/em>), seja no ambito acadêmico ou corporativo não é comum. Isso ocorre devido a diversos fatores, como interconexão de rede lenta, ambiente computacional heterogêneo, sobrecarga da virtualização e compartilhamento de recursos  . De fato, a computação na nuvem tem como principal argumento a redução de custos de manter um parque computacional complexo e, de forma geral, centros computacionais que tem a sua disposição supercomputadores são menos suscetíveis ao argumento do custo. Entretanto, usuários de aplicações HPC em centros computacionais de pequeno e médio porte (ex. Startups, pequenos laboratórios de pesquisa, etc) possuem maior sensibilidade a apelo da computação da nuvem e por essa razão mais suscetiveis a adotá-la.<\/p>",
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
       "createdAt" : 1445607515.275568,
       "updatedAt" : 1445607515.275568
     },
@@ -1210,13 +1360,13 @@
       "objectType" : "MPParagraphElement",
       "elementType" : "p",
       "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "collection" : "elements",
       "placeholderInnerHTML" : "List of keywords relevant to the manuscript.",
-      "_rev" : "3-555ec28bb1f81950a160f1fe1cdecac0",
       "contents" : "<p id=\"MPParagraphElement:861BBBD1-8287-4875-85BE-9BD19E300C36\" class=\"MPElement MPParagraphStyle_5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE\" data-object-type=\"MPParagraphElement\" data-placeholder-text=\"List of keywords relevant to the manuscript.\">HPC, Cloud, Communication, Message Passing, Characterization<\/p>",
       "sessionID" : "bb0caaff-ca20-403b-b460-9b77a1fb3015",
       "createdAt" : 1445603947.058117,
       "updatedAt" : 1445603947.058117,
-      "collection" : "elements"
+      "_rev" : "3-555ec28bb1f81950a160f1fe1cdecac0"
     },
     {
       "_id" : "MPParagraphElement:95923A1D-47BF-4FB4-BFB6-F2D71724ACFD",
@@ -1243,6 +1393,18 @@
       "updatedAt" : 1445603947.939745
     },
     {
+      "_id" : "MPParagraphElement:A94274CD-0B77-4046-C638-DBA2031C4F6F",
+      "paragraphStyle" : "MPParagraphStyle:5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE",
+      "elementType" : "p",
+      "objectType" : "MPParagraphElement",
+      "id" : "MPParagraphElement:A94274CD-0B77-4046-C638-DBA2031C4F6F",
+      "collection" : "elements",
+      "contents" : "<p id=\"MPParagraphElement:A94274CD-0B77-4046-C638-DBA2031C4F6F\" class=\"MPElement MPParagraphStyle_5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE\" data-object-type=\"MPParagraphElement\">Essas estratégias podem ter como objetivo transformar as aplicações HPC cientes da nuvem e de suas limitações (<i>Cloud-Aware<\/i>) ou tornar as nuvens cientes de que aplicações HPC estão sendo executadas (<i>HPC-Aware<\/i>). A estratégia abordada<\/p>",
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
+      "createdAt" : 1445905386,
+      "_rev" : "2-ed75d1db0f4254a525c0ff9f9cf3b52c"
+    },
+    {
       "_id" : "MPParagraphElement:CEBA6B34-D23C-4F64-B03D-A1F7A38D9C6A",
       "objectType" : "MPParagraphElement",
       "elementType" : "p",
@@ -1259,13 +1421,13 @@
       "objectType" : "MPParagraphElement",
       "elementType" : "p",
       "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "collection" : "elements",
       "placeholderInnerHTML" : "A short, unstructured, single paragraph summary of the major points raised, making evident the key work highlighted in the article.",
-      "_rev" : "133-374fd6cc185fca364a46c99f241c17b3",
-      "contents" : "<p id=\"MPParagraphElement:D3DDCDF1-25D7-4A61-8326-16E04608DC1D\" class=\"MPElement MPParagraphStyle_5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE\" data-object-type=\"MPParagraphElement\" data-placeholder-text=\"A short, unstructured, single paragraph summary of the major points raised, making evident the key work highlighted in the article.\">O uso de computação na nuvem por usuários de Computação de Alto Desmpenho ((HPC -\n      <em>High Performance Computing<\/em>) ainda sofre muita resistência, em grande medida, por conta da grande degradação de desempenho que essas aplicações sofrem ao serem executadas na nuvem. Entre os principais fatores que levam à degradação, pode-se citar (1) interconexão de rede lenta, que utiliza hardaware commodity, (2) ambiente heterôgeneo com diferentes gerações de processadores, (3) compartilhamento do hardware entre diferentes usuários e (4) sobrecarga da virtualização.<\/p>",
-      "sessionID" : "bb0caaff-ca20-403b-b460-9b77a1fb3015",
+      "contents" : "<p id=\"MPParagraphElement:D3DDCDF1-25D7-4A61-8326-16E04608DC1D\" class=\"MPElement MPParagraphStyle_5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE\" data-object-type=\"MPParagraphElement\" data-placeholder-text=\"A short, unstructured, single paragraph summary of the major points raised, making evident the key work highlighted in the article.\">O uso de computação na nuvem por usuários de Computação de Alto Desmpenho (HPC -\n      <em>High Performance Computing<\/em>) ainda sofre muita resistência, em grande medida, por conta da grande degradação de desempenho que essas aplicações sofrem ao serem executadas na nuvem. Entre os principais fatores que levam à degradação, pode-se citar (1) interconexão de rede lenta, que geralmente faz uso de <i>hardaware commodity<\/i>, (2) ambiente heterôgeneo com diferentes gerações de processadores, (3) compartilhamento do hardware entre diferentes usuários e (4) sobrecarga da virtualização.<\/p>",
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
       "createdAt" : 1445603946.970548,
       "updatedAt" : 1445607682.396542,
-      "collection" : "elements"
+      "_rev" : "137-2332944c63663dd2c9aeb10c7230e27e"
     },
     {
       "_id" : "MPParagraphElement:D52E5BDB-7A69-4882-B27B-CBAB4C57867D",
@@ -1284,12 +1446,13 @@
       "objectType" : "MPParagraphElement",
       "elementType" : "p",
       "paragraphStyle" : "MPParagraphStyle:bodyText",
+      "collection" : "elements",
       "placeholderInnerHTML" : "Please acknowledge anyone who contributed towards the article by making substantial contributions to conception, design, acquisition of data, or analysis and interpretation of data, or who was involved in drafting the manuscript or revising it critically for important intellectual content, but who does not meet the criteria for authorship. Please also include the source(s) of funding for each author, and for the manuscript preparation. Authors must describe the role of the funding body, if any, in design, in the collection, analysis, and interpretation of data; in the writing of the manuscript; and in the decision to submit the manuscript for publication. Please also acknowledge anyone who contributed materials essential for the study. If a language editor has made significant revision of the manuscript, we recommend that you acknowledge the editor by name, where possible.\n\nAuthors should obtain permission to acknowledge from all those mentioned in the Acknowledgements section.",
-      "_rev" : "1-2f546e264f744dfc1662033cc752bb12",
-      "contents" : "<p id=\"MPParagraphElement:DC178C03-FCFB-4571-AF39-BE8A8393036B\" class=\"MPElement\" data-object-type=\"MPParagraphElement\"><\/p>",
-      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
+      "contents" : "<p id=\"MPParagraphElement:DC178C03-FCFB-4571-AF39-BE8A8393036B\" class=\"MPElement MPParagraphStyle_5A4CFC86-78B4-41F1-9EF2-4D94FCFA1ACE placeholder\" data-object-type=\"MPParagraphElement\" data-placeholder-text=\"Please acknowledge anyone who contributed towards the article by making substantial contributions to conception, design, acquisition of data, or analysis and interpretation of data, or who was involved in drafting the manuscript or revising it critically for important intellectual content, but who does not meet the criteria for authorship. Please also include the source(s) of funding for each author, and for the manuscript preparation. Authors must describe the role of the funding body, if any, in design, in the collection, analysis, and interpretation of data; in the writing of the manuscript; and in the decision to submit the manuscript for publication. Please also acknowledge anyone who contributed materials essential for the study. If a language editor has made significant revision of the manuscript, we recommend that you acknowledge the editor by name, where possible.\n\nAuthors should obtain permission to acknowledge from all those mentioned in the Acknowledgements section.\"><\/p>",
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
       "createdAt" : 1445603947.178004,
-      "updatedAt" : 1445603947.178004
+      "updatedAt" : 1445603947.178004,
+      "_rev" : "2-7a2a442e3efab8d8217092a63ac28f2a"
     },
     {
       "_id" : "MPParagraphElement:E08ADE2C-E46E-4FB3-BCF4-B756624E234E",
@@ -1339,50 +1502,14 @@
       "updatedAt" : 1445603947.11905
     },
     {
-      "updatedAt" : 1445603948.0389,
-      "category" : "MPSectionCategory:competing-interests",
-      "objectType" : "MPSection",
-      "_rev" : "2-1b056eb63b1002c7e9db521a48d47da2",
-      "_id" : "MPSection:1145FB34-722E-4F10-A9BD-1294B2C92B95",
-      "firstElementPlaceholderString" : "A competing interest exists when your interpretation of data or presentation of information may be influenced by your personal or financial relationship with other people or organizations. Authors must disclose any financial competing interests; they should also reveal any non-financial competing interests that may cause them embarrassment were they to become public after the publication of the manuscript.\n\nAuthors are required to complete a declaration of competing interests. All competing interests that are declared will be listed at the end of published articles. Where an author gives no competing interests, the listing will read 'The author(s) declare that they have no competing interests'.",
-      "title" : "Competing Interests",
-      "path" : [
-        "MPSection:1145FB34-722E-4F10-A9BD-1294B2C92B95"
-      ],
-      "priority" : 9,
-      "createdAt" : 1445603948.031974,
-      "elementIDs" : [
-        "MPParagraphElement:D52E5BDB-7A69-4882-B27B-CBAB4C57867D"
-      ],
-      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
-    },
-    {
-      "updatedAt" : 1445603947.981573,
-      "category" : "MPSectionCategory:author-information",
-      "objectType" : "MPSection",
-      "_rev" : "2-02e15930da1329c5b9b1773204bbf72c",
-      "_id" : "MPSection:123E0EEB-7ABB-4C14-B34C-6522D2121C22",
-      "firstElementPlaceholderString" : "You may choose to use this section to include any relevant information about the author(s) that may aid the reader's interpretation of the article, and understand the standpoint of the author(s). This may include details about the authors' qualifications, current positions they hold at institutions or societies, or any other relevant background information. Please refer to authors using their initials. Note this section should not be used to describe any competing interests.",
-      "title" : "Author Information",
-      "path" : [
-        "MPSection:123E0EEB-7ABB-4C14-B34C-6522D2121C22"
-      ],
-      "priority" : 7,
-      "createdAt" : 1445603947.972458,
-      "elementIDs" : [
-        "MPParagraphElement:4A5A2369-6846-49FC-B4A5-07DE9CEBE91E"
-      ],
-      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
-    },
-    {
-      "_id" : "MPSection:3D7588EF-0A74-4F02-AD69-655B1031BE95",
       "category" : "MPSectionCategory:keywords",
+      "_id" : "MPSection:3D7588EF-0A74-4F02-AD69-655B1031BE95",
       "objectType" : "MPSection",
       "_rev" : "2-9b91b361f06dbe033c90fbfa2327c75f",
-      "title" : "Keywords",
       "elementIDs" : [
         "MPParagraphElement:861BBBD1-8287-4875-85BE-9BD19E300C36"
       ],
+      "title" : "Keywords",
       "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
       "createdAt" : 1445603947.051511,
       "path" : [
@@ -1392,26 +1519,8 @@
       "updatedAt" : 1445603947.060878
     },
     {
-      "updatedAt" : 1445603948.012211,
-      "category" : "MPSectionCategory:author-contributions",
-      "objectType" : "MPSection",
-      "_rev" : "2-693747750d70a34b81bfd51377bf015a",
-      "_id" : "MPSection:3FAE3F54-6E70-4989-980C-B04D76E149C9",
-      "firstElementPlaceholderString" : "In order to give appropriate credit to each author of a paper, the individual contributions of authors to the manuscript should be specified in this section.",
-      "title" : "Author contributions",
-      "path" : [
-        "MPSection:3FAE3F54-6E70-4989-980C-B04D76E149C9"
-      ],
-      "priority" : 8,
-      "createdAt" : 1445603948.004722,
-      "elementIDs" : [
-        "MPParagraphElement:95923A1D-47BF-4FB4-BFB6-F2D71724ACFD"
-      ],
-      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
-    },
-    {
-      "updatedAt" : 1445607515.283467,
       "category" : "MPSectionCategory:introduction",
+      "updatedAt" : 1445607515.283467,
       "objectType" : "MPSection",
       "_rev" : "3-4da06fc019bc9d30430e7aec9e8346e4",
       "_id" : "MPSection:44EB7A3A-0A0A-4C54-8447-1F6D5347559F",
@@ -1430,87 +1539,76 @@
       "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
     },
     {
-      "updatedAt" : 1445603947.942014,
-      "category" : "MPSectionCategory:abbreviations",
-      "objectType" : "MPSection",
-      "_rev" : "2-bbc21455394b25149622b1c27f33f74f",
-      "_id" : "MPSection:5197A5CC-52DA-496F-A40D-274D59C80533",
-      "firstElementPlaceholderString" : "If abbreviations are used in the text they should be defined in the text at first use, and a list of abbreviations can be provided, which should precede the competing interests and authors' contributions.",
-      "title" : "Abbreviations",
-      "path" : [
-        "MPSection:5197A5CC-52DA-496F-A40D-274D59C80533"
-      ],
-      "priority" : 6,
-      "createdAt" : 1445603947.934356,
-      "elementIDs" : [
-        "MPParagraphElement:98ECA700-D7BD-4133-8094-A21291C9BC9A"
-      ],
-      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
-    },
-    {
-      "_id" : "MPSection:5F51E60F-C38F-4DB9-B5FD-427AEE97C7A8",
-      "category" : "MPSectionCategory:cover-letter",
-      "objectType" : "MPSection",
-      "_rev" : "2-3d37607f17bd8b0cf0ddbe71ed3e3fda",
-      "title" : "Cover Letter",
-      "elementIDs" : [
-        "MPParagraphElement:CEBA6B34-D23C-4F64-B03D-A1F7A38D9C6A"
-      ],
-      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
-      "createdAt" : 1445603948.059718,
-      "path" : [
-        "MPSection:5F51E60F-C38F-4DB9-B5FD-427AEE97C7A8"
-      ],
-      "priority" : 10,
-      "updatedAt" : 1445603948.066638
-    },
-    {
-      "updatedAt" : 1445603947.180914,
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
       "category" : "MPSectionCategory:acknowledgement",
+      "updatedAt" : 1445603947.180914,
       "objectType" : "MPSection",
-      "_rev" : "2-15b17d13089181cf59653c2a91ae9aa7",
+      "_rev" : "7-bb23da6c5f467128a0052883316adb3e",
       "_id" : "MPSection:640E517E-5F30-41FD-9883-196E5C5C4E6E",
       "firstElementPlaceholderString" : "Please acknowledge anyone who contributed towards the article by making substantial contributions to conception, design, acquisition of data, or analysis and interpretation of data, or who was involved in drafting the manuscript or revising it critically for important intellectual content, but who does not meet the criteria for authorship. Please also include the source(s) of funding for each author, and for the manuscript preparation. Authors must describe the role of the funding body, if any, in design, in the collection, analysis, and interpretation of data; in the writing of the manuscript; and in the decision to submit the manuscript for publication. Please also acknowledge anyone who contributed materials essential for the study. If a language editor has made significant revision of the manuscript, we recommend that you acknowledge the editor by name, where possible.\n\nAuthors should obtain permission to acknowledge from all those mentioned in the Acknowledgements section.",
-      "title" : "Acknowledgments",
+      "title" : "Ambiente de Testes",
       "path" : [
         "MPSection:640E517E-5F30-41FD-9883-196E5C5C4E6E"
       ],
-      "priority" : 5,
+      "priority" : 6,
+      "contents" : "<h1 id=\"MPSection:640E517E-5F30-41FD-9883-196E5C5C4E6E\" class=\"MPSection MPParagraphStyle_50118559-2212-4866-B735-85BF8CEFF867\" data-placeholder-text=\"Section heading\">Ambiente de Testes<\/h1>",
       "createdAt" : 1445603947.172196,
       "elementIDs" : [
-        "MPParagraphElement:DC178C03-FCFB-4571-AF39-BE8A8393036B"
-      ],
-      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
-    },
-    {
-      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
-      "category" : "MPSectionCategory:abstract",
-      "updatedAt" : 1445603947.015254,
-      "objectType" : "MPSection",
-      "_rev" : "5-1f0e73dbd414f921836335add9ff9f8f",
-      "_id" : "MPSection:916E337A-8E01-4963-AF49-BE8C7DC6C2A9",
-      "firstElementPlaceholderString" : "A short, unstructured, single paragraph summary of the major points raised, making evident the key work highlighted in the article.",
-      "title" : "Abstract",
-      "path" : [
-        "MPSection:916E337A-8E01-4963-AF49-BE8C7DC6C2A9"
-      ],
-      "priority" : 0,
-      "maxWordCountRequirement" : "MPMaximumSectionWordCountRequirement:F517FC5E-1B51-454E-A0EA-F42274BC4CE9",
-      "createdAt" : 1445603946.936199,
-      "elementIDs" : [
-        "MPParagraphElement:D3DDCDF1-25D7-4A61-8326-16E04608DC1D",
-        "MPParagraphElement:43E62575-C163-447F-889B-055F4CABD8DD"
+        "MPParagraphElement:DA9626C9-6F01-486C-ADBD-AAB5987816B0",
+        "MPParagraphElement:0D1E3057-180B-4AC9-9A5F-FF8093989E25",
+        "MPParagraphElement:10B3B1B8-4788-4A6F-E908-D496137712FB"
       ],
       "collection" : "sections"
     },
     {
-      "updatedAt" : 1445603947.150543,
-      "category" : "MPSectionCategory:conclusions",
+      "_id" : "MPSection:681BA355-A6E6-49C3-CA78-2C39615C42BA",
       "objectType" : "MPSection",
-      "_rev" : "2-d6a2f43427d53d0726f4b54c4a30f2d3",
+      "id" : "MPSection:681BA355-A6E6-49C3-CA78-2C39615C42BA",
+      "_rev" : "1-13a43e1ff5a6bc4abd519fbff5fa86f3",
+      "collection" : "sections",
+      "elementIDs" : [
+
+      ],
+      "title" : "",
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
+      "createdAt" : 1445906699,
+      "path" : [
+        "MPSection:640E517E-5F30-41FD-9883-196E5C5C4E6E",
+        "MPSection:681BA355-A6E6-49C3-CA78-2C39615C42BA"
+      ],
+      "priority" : 7
+    },
+    {
+      "elementIDs" : [
+        "MPParagraphElement:D3DDCDF1-25D7-4A61-8326-16E04608DC1D",
+        "MPParagraphElement:43E62575-C163-447F-889B-055F4CABD8DD",
+        "MPParagraphElement:A94274CD-0B77-4046-C638-DBA2031C4F6F"
+      ],
+      "category" : "MPSectionCategory:abstract",
+      "updatedAt" : 1445603947.015254,
+      "objectType" : "MPSection",
+      "_rev" : "9-2dafdffd855635de91259006be5e010b",
+      "firstElementPlaceholderString" : "A short, unstructured, single paragraph summary of the major points raised, making evident the key work highlighted in the article.",
+      "path" : [
+        "MPSection:916E337A-8E01-4963-AF49-BE8C7DC6C2A9"
+      ],
+      "priority" : 0,
+      "title" : "Abstract",
+      "_id" : "MPSection:916E337A-8E01-4963-AF49-BE8C7DC6C2A9",
+      "maxWordCountRequirement" : "MPMaximumSectionWordCountRequirement:F517FC5E-1B51-454E-A0EA-F42274BC4CE9",
+      "createdAt" : 1445603946.936199,
+      "collection" : "sections",
+      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
+    },
+    {
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
+      "category" : "MPSectionCategory:conclusions",
+      "updatedAt" : 1445603947.150543,
+      "objectType" : "MPSection",
+      "_rev" : "4-cfc81e39f868ba4977a3ed126f06ddf8",
       "_id" : "MPSection:E3D67007-0EDE-487B-B714-6F004A58F4A3",
       "firstElementPlaceholderString" : "This should state clearly the main conclusions of the research and give a clear explanation of their importance and relevance. Summary illustrations may be included.",
-      "title" : "Conclusions",
+      "title" : "Metodologia",
       "path" : [
         "MPSection:E3D67007-0EDE-487B-B714-6F004A58F4A3"
       ],
@@ -1519,24 +1617,42 @@
       "elementIDs" : [
         "MPParagraphElement:E08ADE2C-E46E-4FB3-BCF4-B756624E234E"
       ],
-      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD"
+      "collection" : "sections"
     },
     {
-      "_id" : "MPSection:FA9A33D4-490F-406D-84E8-2BDA22A0F52D",
-      "category" : "MPSectionCategory:review",
+      "_id" : "MPSection:EFC085AC-3D7A-48DF-E988-4F7FD8E6C8DB",
       "objectType" : "MPSection",
-      "_rev" : "2-47b31ec489522f8fb05554f64ab6b0c1",
-      "title" : "Review",
+      "id" : "MPSection:EFC085AC-3D7A-48DF-E988-4F7FD8E6C8DB",
+      "_rev" : "4-922e03f42899a115dab34da82754a5c8",
+      "title" : "Bibliograp",
       "elementIDs" : [
-        "MPParagraphElement:FFE0BB1B-CCF9-4114-BF8C-089E989A9332"
+        "MPBibliographyElement:865550E9-FB38-4B55-83CE-418345CEA9A4"
       ],
-      "sessionID" : "4C892851-1BC7-4CF4-B78F-7FABB17167CD",
-      "createdAt" : 1445603947.112877,
+      "collection" : "sections",
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
+      "path" : [
+        "MPSection:EFC085AC-3D7A-48DF-E988-4F7FD8E6C8DB"
+      ],
+      "priority" : 3,
+      "createdAt" : 1445906594
+    },
+    {
+      "sessionID" : "5a5dd98a-402b-46f6-e0f6-13a5e9b9b6fc",
+      "category" : "MPSectionCategory:review",
+      "updatedAt" : 1445603947.121167,
+      "objectType" : "MPSection",
+      "_rev" : "4-d2218ea5724d1d19c3edb0aa61bbe972",
+      "_id" : "MPSection:FA9A33D4-490F-406D-84E8-2BDA22A0F52D",
       "path" : [
         "MPSection:FA9A33D4-490F-406D-84E8-2BDA22A0F52D"
       ],
+      "title" : "Revisão Bibliográfica",
       "priority" : 3,
-      "updatedAt" : 1445603947.121167
+      "createdAt" : 1445603947.112877,
+      "elementIDs" : [
+        "MPParagraphElement:FFE0BB1B-CCF9-4114-BF8C-089E989A9332"
+      ],
+      "collection" : "sections"
     }
   ],
   "snapshots" : [
