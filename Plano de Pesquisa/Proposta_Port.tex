@@ -457,24 +457,35 @@ Apesar do custo da computação na nuvem ser um atrativo, sua adoção ainda sof
 
 Uma das premissas deste trabalho é que as aplicações HPC poderiam ser classificadas de acordo com o padrão de sua comunicação. Conforme observado por \citet{Gupta:2014} as mensagens trocadas por uma aplicação HPC podem ser sensíveis à latência, quando as mensagens são pequenas mas ocorrem em grande quantidade ou sensíveis à largura de banda, quando as mensagens são grandes, mas ocorrem em menor frequência. Dada essa característica de mensagens, a hipótese desse trabalho é de que identificando os padrões de troca de mensagens de aplicações HPC poderíamos colocar as MVs no mesmo host físico ou, caso não seja possível, colocar as MVs em hosts físicos mais próximos para evitar ou atenuar a latência de comunicação. Através da caracterização das trocas de mensagens também poderiamos evitar que MVs com padrões conflitantes fiquem no mesmo host físico. Para isso, é necessário endereçar as seguintes perguntas:
 \begin{enumerate}
-    \item Quanto é a influência da latência na troca de mensagens de aplicações HPC?
-    \item Quanto é a influência da largura de banda na troca de mensagens de aplicações HPC?
-    \item Quão perto uma MV deve ficar (quantos hops) de outra MV afim de reduzir a latência na troca de mensagens?
-    \item TBD
-    \item TBD
+    \item É possível quantificar a influência da latência e da largura de banda na troca de mensagens de aplicações HPC?
+    \item Qual a distância (hops) minima que uma MV deve estar de outras VMs afim de reduzir ou atenuar a latência? 
+    \item Há, de algum modo, influência mutua entre MVs localizadas no mesmo host e com o mesmo padrão de troca de mensagens?
+    \item É possível classificar ou caracterizar aplicações de acordo com as trocas de mensagens?
 \end{enumerate}
 
-\section{Bibliografia}
-TBD
+As perguntas apresentadas devem nortear o estudo conduzido neste trabalho. Antes de avaliar as técnicas de caracterização das aplicações HPC, é necessário quantificar o impacto da latência e da largura de banda nessas aplicações. Além disso, precisa-se quantificar de que forma a distância entre as MVs pesa na latência da troca de mensagens. Esses estudos preliminares serão importantes para medir os possíveis ganhos de uma estratégia de caracterização que terá como entrada justamente a troca de mensagens entre as MVs.
 
 \section{Metodologia}
-TBD
+
+
 
 \section{Ambiente de Testes}
-TBD
+Para a condução dos testes estamos avaliando o uso de Testbeds para pesquisas em computação na nuvem. Outra possibilidade que está sendo avaliada é o uso de simuladores a condução dos estudos. A seguir é apresentada uma lista de Testbeds disponíveis (login e acessos já validados em todos eles) e uma breve descrição. Inicialmente o objetivo é trabalhar com máquinas físicas para ser possível manusear as MVs nos hosts e por isso ainda está sendo avaliado quais das Testbeds possui a melhor flexibilidade e disponibilidade de recursos.
+
+\begin{itemize}
+ \item \textbf{Geni \cite{Elliott:2009}}: Infraestrutura disponível para pesquisadores realizarem experimentos voltados para computação na nuvem. O Geni é financiado pela National Science Foundation (NSF) e conta com recursos computacionais de diversas universidades americanas. É possível reservar recursos físicos e montar topologias de rede customizadas com switches openflow;
+ \item \textbf{Chameleon:} Nos mesmos moldes do Geni, é também uma infraestrutura voltada para pesquisa com recursos computacionais variados. Permite a criação de topologias e é financiado pela NSC;
+ \item \textbf{Cloudlab:} Diferente dos testbeds anteriores, o Cloudlab não possui recursos físicos disponíveis (somente máquinas virtuais). Entretanto, possui uma ótima flexibilidade na criação de topologias. É possível assinalar taxa de perda de pacotes e outros parâmetros nos enlaces de rede;
+ \item \textbf{Emulab:} O emulab não possui MVs disponíveis para serem criadas, somente máquinas físicas. Em testes preliminares é o testbed com maior disponibilidade de recursos físicos para a condução dos testes.
+\end{itemize}
+
+\subsection{Topologia para Condução de Experimentos}
+
+\section{Benchmarks e Cargas de Trabalho}
 
 \subsection{Avaliação}
-TBD
+
+
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
