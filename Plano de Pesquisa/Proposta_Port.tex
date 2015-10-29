@@ -468,6 +468,17 @@ As perguntas apresentadas devem nortear o estudo conduzido neste trabalho. Antes
 \section{Metodologia}
 
 
+\subsection{Métricas}
+As métricas que serão avaliadas no trabalho para caracterizar padrões de trocas de mensagens serão as mesmas utilizadas em \citet{Chao:2008}. Nesse artigo os autores definem três dimensões para avaliar padrões de trocas de mensagens:
+\begin{itemize}
+    \item \textbf{Temporal:} Taxa de mensagens enviadas;
+    \item \textbf{Volume:} Média do tamanho das mensagens;
+    \item \textbf{Espacial:} Quantidade de destinatários.
+\end{itemize}
+
+Essas métricas podem ser coletadas de duas formas; a primeira colocando mecanismos de depuração no código que está sendo avaliado e a segunda forma coletando as informações a partir da infra-estrutura (ex. diretamente dos hospedeiros ou dos dispositivos de rede). Em um primeiro momento, a segunda alternativa é a preferencial por ser menos intrusivo e dependendo dos benchmarks e cargas de trabalho escolhidas essa alteração pode ser muito complexa ou mesmo inviável.
+
+Uma das opções que serão avaliadas é o uso de switches com suporte a OpenFlow \cite{McKeown:2008}. Com o uso de controladores seria possível coletar estatísticas de cada porta do switch ou de cada flow. Essas estatísticas seriam usadas para identificar os padrões de comportamento das aplicações HPC e, em um próximo passo, fazer a caracterização das aplicações de acordo com as estatísticas coletadas.
 
 \section{Ambiente de Testes}
 Para a condução dos testes estamos avaliando o uso de Testbeds para pesquisas em computação na nuvem. Outra possibilidade que está sendo avaliada é o uso de simuladores a condução dos estudos. A seguir é apresentada uma lista de Testbeds disponíveis (login e acessos já validados em todos eles) e uma breve descrição. Inicialmente o objetivo é trabalhar com máquinas físicas para ser possível manusear as MVs nos hosts e por isso ainda está sendo avaliado quais das Testbeds possui a melhor flexibilidade e disponibilidade de recursos.
@@ -478,6 +489,15 @@ Para a condução dos testes estamos avaliando o uso de Testbeds para pesquisas 
  \item \textbf{Cloudlab:} Diferente dos testbeds anteriores, o Cloudlab não possui recursos físicos disponíveis (somente máquinas virtuais). Entretanto, possui uma ótima flexibilidade na criação de topologias. É possível assinalar taxa de perda de pacotes e outros parâmetros nos enlaces de rede;
  \item \textbf{Emulab:} O emulab não possui MVs disponíveis para serem criadas, somente máquinas físicas. Em testes preliminares é o testbed com maior disponibilidade de recursos físicos para a condução dos testes.
 \end{itemize}
+
+Como alternativas de simulação para a condução dos experimentos, as opções que teríamos disponíveis são:
+\begin{itemize}
+    \item \textbf{CloudSim \cite{Calheiros:2011}}: É um simulador bastante usado para fazer avaliações de desempenho de aplicações HPC na nuvem. É possível modelar uma nuvem inserindo diversos parametros como a a capacidade computacional de cada máquina física, propriedades da rede e cargas de trabalho. Recentemente foi adicionado um recurso de simulação de migração de máquinas virtuais no CloudSim o que o torna um forte candidato a ser utilizado em nossos experimentos. O principal desafio de usar o CloudSim é como inserir traces ou a execução de benchmarks nas simulações; 
+    \item \textbf{GreenCLoud \cite{Kliazovich:2010}}: Simulador de computação na nuvem, mas com um foco mais voltado ao consumo de energia. Apesar disso, possui uma boa interface de programação (e interface gráfica) e possibilita a simulação de migração de MVs. Assim como ocorre com o CloudSim, a execução de benchmarks e cargas de trabalho precisam ser melhor avaliadas;
+    \item \textbf{Mininet \cite{Handigol:2012}}: O Mininet simula o comportamento de uma rede e com ele é possível construir diversas topologias de rede com diferentes tipos de switches. Entre outras coisas, pode criar redes com diversos parametros como taxa de perda de pacotes, latência, largura de banda, etc. Assim como ocorre com o CloudSim, o problema do mininet reside na forma de executar aplicações HPC nos hosts.
+\end{itemize}
+
+O uso de simuladores pode ser uma alternativa para um possível teste com centenas de MVs  sendo executadas em um data center. Dessa forma, mesmo que um dos testbeds apresentados consiga atender todas as necessidades apontadas, o estudo e possivelmente o uso dos simuladores não será descartado.
 
 \subsection{Topologia para Condução de Experimentos}
 
