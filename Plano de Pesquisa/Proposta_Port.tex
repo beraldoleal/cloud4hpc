@@ -95,6 +95,7 @@
 % \ifCLASSINFOpdf conditional that works the same way.
 % When switching from latex to pdflatex and vice-versa, the compiler may
 % have to be run twice to clear warning/error messages.
+\usepackage[numbers]{natbib}
 \usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -449,12 +450,19 @@ HPC; Cloud; Communication; Message Passing; Characterization
 
 
 
-\section{Introduction}
-A adesão de usuários de aplicações de Computação de Alto Desempenho (HPC - \emph{High Performance Computing}), seja no ambito acadêmico ou corporativo não é comum. Isso ocorre devido a diversos fatores, como interconexão de rede lenta, ambiente computacional heterogêneo, sobrecarga da virtualização e compartilhamento de recursos  . De fato, a computação na nuvem tem como principal argumento a redução de custos de manter um parque computacional complexo e, de forma geral, centros computacionais que tem a sua disposição supercomputadores são menos suscetíveis ao argumento do custo. Entretanto, usuários de aplicações HPC em centros computacionais de pequeno e médio porte (ex. Startups, pequenos laboratórios de pesquisa, etc) possuem maior sensibilidade a apelo da computação da nuvem e por essa razão mais suscetiveis a adotá-la.
+\section{Introdução}
+A adesão de usuários de aplicações de Computação de Alto Desempenho (HPC - \emph{High Performance Computing}), seja no ambito acadêmico ou corporativo não é comum. Isso ocorre devido a diversos fatores, como interconexão de rede lenta, ambiente computacional heterogêneo, sobrecarga da virtualização e compartilhamento de recursos \cite{Gupta:2014}. De fato, a computação na nuvem tem como principal argumento a redução de custos de manter um parque computacional complexo e, de forma geral, centros computacionais que tem a sua disposição supercomputadores são menos suscetíveis ao argumento do custo. Entretanto, usuários de aplicações HPC em centros computacionais de pequeno e médio porte (ex. Startups, pequenos laboratórios de pesquisa, etc) possuem maior sensibilidade a apelo da computação da nuvem e por essa razão mais suscetíveis a adotá-la \cite{Gupta:2014} \cite{Gupta:2013}.
 
-Apesar do custo da computação na nuvem ser um atrativo, sua adoção ainda sofre grande resistência por parte de usuários de pequeno e médio porte de aplicações HPC em razão da degradação do desempenho. Em grande medida, a degradação de desempenho de aplicações HPC na nuvem deve-se ao uso de compartilhado de recursos computacionais, principalmente de interfaces de rede.
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
+Apesar do custo da computação na nuvem ser um atrativo, sua adoção ainda sofre grande resistência por parte de usuários de pequeno e médio porte de aplicações HPC em razão da degradação do desempenho \cite{Niu:2013}. Em grande medida, a degradação de desempenho de aplicações HPC na nuvem deve-se ao uso compartilhado de recursos computacionais. Nesse cenário diversas MVs competem pela utilização de recursos computacionais do host físico e, com isso, ocorre o comprometimento do desempenho das aplicações. O compartilhamento da interface de rede em especial é um dos principais fatores de degradação de desempenho \cite{Gupta:2014} das aplicações HPC que possuem grande dependência da troca de mensagens para realizar a computação.
+
+Uma das premissas deste trabalho é que as aplicações HPC poderiam ser classificadas de acordo com o padrão de sua comunicação. Conforme observado por \citet{Gupta:2014} as mensagens trocadas por uma aplicação HPC podem ser sensíveis à latência, quando as mensagens são pequenas mas ocorrem em grande quantidade ou sensíveis à largura de banda, quando as mensagens são grandes, mas ocorrem em menor frequência. Dada essa característica de mensagens, a hipótese desse trabalho é de que identificando os padrões de troca de mensagens de aplicações HPC poderíamos colocar as MVs no mesmo host físico ou, caso não seja possível, colocar as MVs em hosts físicos mais próximos para evitar ou atenuar a latência de comunicação. Através da caracterização das trocas de mensagens também poderiamos evitar que MVs com padrões conflitantes fiquem no mesmo host físico. Para isso, é necessário endereçar as seguintes perguntas:
+\begin{enumerate}
+    \item Quanto é a influência da latência na troca de mensagens de aplicações HPC?
+    \item Quanto é a influência da largura de banda na troca de mensagens de aplicações HPC?
+    \item Quão perto uma MV deve ficar (quantos hops) de outra MV afim de reduzir a latência na troca de mensagens?
+    \item TBD
+    \item TBD
+\end{enumerate}
 
 \section{Bibliografia}
 TBD
@@ -578,7 +586,7 @@ None
 % http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
 % The IEEEtran BibTeX style support page is at:
 % http://www.michaelshell.org/tex/ieeetran/bibtex/
-\bibliographystyle{IEEEtran}
+\bibliographystyle{IEEEtranN}
 \bibliography{references}
 % argument is your BibTeX string definitions and bibliography database(s)
 %\bibliography{IEEEabrv,../bib/paper}
