@@ -103,7 +103,7 @@
 \usepackage{txfonts}
 \usepackage{graphicx}
 \usepackage[export]{adjustbox}
-
+\usepackage{multirow}
 
 
 % *** CITATION PACKAGES ***
@@ -359,6 +359,7 @@
 % can use linebreaks \\ within to get better formatting as desired
 \title{Otimizando a Localização de MVs na Nuvem Através de Padrões de Comunicação}
 
+\title{Redes Reconfiguráveis Para Aplicações HPC na Nuvem}
 
 % author names and affiliations
 % use a multiple column layout for up to two different
@@ -414,14 +415,8 @@ Email: mstelmar@br.ibm.com}
 %Telephone: (800) 555--1212, Fax: (888) 555--1212}
 %\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
 
-
-
-
 % use for special paper notices
 %\IEEEspecialpapernotice{(Invited Paper)}
-
-
-
 
 % make the title area
 \maketitle
@@ -430,7 +425,7 @@ Email: mstelmar@br.ibm.com}
 \begin{abstract}
 O uso de computação na nuvem por usuários de Computação de Alto Desmpenho (HPC -\emph{High Performance Computing}) ainda sofre muita resistência, em grande medida, por conta da grande degradação de desempenho que essas aplicações sofrem ao serem executadas na nuvem. Entre os principais fatores que levam à degradação, pode-se citar (1) interconexão de rede lenta, que geralmente faz uso de hardaware commodity, (2) ambiente heterôgeneo com diferentes gerações de processadores, (3) compartilhamento do hardware entre diferentes usuários e (4) sobrecarga da virtualização.
 
-Diferentes estratégias para viabilizar HPC na nuvem vem sendo discutidas e propostas. Em geral, pode-se classificar essas estratégias em Cloud-Aware, quando a aplicação HPC tem ciência de que está sendo executada em um ambiente na nuvem e de suas limitações ou HPC-Aware, que são estratégias que visam configurar a nuvem de forma otimizada para a execução de aplicações HPC. Neste trabalho, será apresentada uma solução que orbita as estratégias HPC-Aware, em que baseando-se no padrão de comunicação da aplicação, as Máquinas Virtuais (VM - Virtual Machine) serão realocadas em hospedeiros físicos com o objetivo de reduzir a sobrecarga inerente de um ambiente na nuvem para aplicações HPC. Nossa hipótese é que, dado um determinado padrão de comunicação poderiamos deixar MVs que trocam mensagens constantemente mais próximas (no mesmo hospedeiro ou no máximo a um hop de distância). Uma das possibilidades que também poderá ser avaliada é a alocação de MVs com padrões de comunicação incompatíveis entre si e separar MVs que estejam nessa situação.
+Diferentes estratégias para viabilizar HPC na nuvem vem sendo discutidas e propostas. Em geral, pode-se classificar essas estratégias em Cloud-Aware, quando a aplicação HPC tem ciência de que está sendo executada em um ambiente na nuvem e de suas limitações ou HPC-Aware, que são estratégias que visam configurar a nuvem de forma otimizada para a execução de aplicações HPC. Neste trabalho, será apresentada uma solução que orbita as estratégias HPC-Aware, em que baseando-se no padrão de comunicação da aplicação, as Máquinas Virtuais (VM - Virtual Machine) serão realocadas em hospedeiros físicos com o objetivo de reduzir a sobrecarga inerente de um ambiente na nuvem para aplicações HPC. Nossa hipótese é que, dado um determinado padrão de comunicação poderiamos deixar MVs que trocam mensagens constantemente mais próximas (no mesmo hospedeiro ou alguns hops de distância). Uma das possibilidades que também poderá ser avaliada é a alocação de MVs com padrões de comunicação incompatíveis entre si e separar MVs que estejam nessa situação.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -451,19 +446,44 @@ HPC; Cloud; Communication; Message Passing; Characterization
 
 
 \section{Introdução}
-A adesão de usuários de aplicações de Computação de Alto Desempenho (HPC - \emph{High Performance Computing}), seja no ambito acadêmico ou corporativo não é comum. Isso ocorre devido a diversos fatores, como interconexão de rede lenta, ambiente computacional heterogêneo, sobrecarga da virtualização e compartilhamento de recursos \cite{Gupta:2014}. De fato, a computação na nuvem tem como principal argumento a redução de custos de manter um parque computacional complexo e, de forma geral, centros computacionais que tem a sua disposição supercomputadores são menos suscetíveis ao argumento do custo. Entretanto, usuários de aplicações HPC em centros computacionais de pequeno e médio porte (ex. Startups, pequenos laboratórios de pesquisa, etc) possuem maior sensibilidade a apelo da computação da nuvem e por essa razão mais suscetíveis a adotá-la \cite{Gupta:2014} \cite{Gupta:2013}.
+A adesão de usuários de aplicações de Computação de Alto Desempenho (HPC - \textit{High Performance Computing}), seja no âmbito acadêmico ou corporativo não é comum. Isso ocorre devido a diversos fatores, como interconexão de rede lenta, ambiente computacional heterogêneo, sobrecarga da virtualização e compartilhamento de recursos \cite{Gupta:2014}. De fato, a computação na nuvem tem como principal argumento a redução de custos e, de forma geral, centros computacionais que tem a sua disposição supercomputadores são menos suscetíveis a este argumento. Entretanto, usuários de aplicações HPC em centros computacionais de pequeno e médio porte (ex. Startups, pequenos laboratórios de pesquisa, etc) possuem maior sensibilidade a apelo da computação da nuvem e por essa razão mais suscetíveis a adotá-la \cite{Gupta:2014} \cite{Gupta:2013}.
 
-Apesar do custo da computação na nuvem ser um atrativo, sua adoção ainda sofre grande resistência por parte de usuários de pequeno e médio porte de aplicações HPC em razão da degradação do desempenho \cite{Niu:2013}. Em grande medida, a degradação de desempenho de aplicações HPC na nuvem deve-se ao uso compartilhado de recursos computacionais. Nesse cenário diversas MVs competem pela utilização de recursos computacionais do host físico e, com isso, ocorre o comprometimento do desempenho das aplicações. O compartilhamento da interface de rede em especial é um dos principais fatores de degradação de desempenho \cite{Gupta:2014} das aplicações HPC que possuem grande dependência da troca de mensagens para realizar a computação.
+Apesar do custo da computação na nuvem ser um atrativo, sua adoção ainda sofre grande resistência por parte de usuários de pequeno e médio porte de aplicações HPC em razão da degradação do desempenho \cite{Niu:2013}. Em grande medida, essa degradação de desempenho de aplicações HPC na nuvem deve-se ao uso compartilhado de recursos computacionais. Nesse cenário diversas Máquinas Virtuais (MVs) competem pela utilização de recursos computacionais do \textit{host} físico e, com isso, ocorre o comprometimento do desempenho das aplicações. O compartilhamento da interface de rede, em especial, é um dos principais fatores de degradação de desempenho \cite{Gupta:2014} das aplicações HPC que possuem grande dependência da troca de mensagens para realizar a computação.
 
-Uma das premissas deste trabalho é que as aplicações HPC poderiam ser classificadas de acordo com o padrão de sua comunicação. Conforme observado por \citet{Gupta:2014} as mensagens trocadas por uma aplicação HPC podem ser sensíveis à latência, quando as mensagens são pequenas mas ocorrem em grande quantidade ou sensíveis à largura de banda, quando as mensagens são grandes, mas ocorrem em menor frequência. Dada essa característica de mensagens, a hipótese desse trabalho é de que identificando os padrões de troca de mensagens de aplicações HPC poderíamos colocar as MVs no mesmo host físico ou, caso não seja possível, colocar as MVs em hosts físicos mais próximos para evitar ou atenuar a latência de comunicação. Através da caracterização das trocas de mensagens também poderiamos evitar que MVs com padrões conflitantes fiquem no mesmo host físico. Para isso, é necessário endereçar as seguintes perguntas:
+Uma das premissas deste trabalho é que as aplicações HPC poderiam ser classificadas de acordo com o padrão de sua comunicação, conforme observado por \citet{Gupta:2014} e \citet{Asanovic:2006}. Portanto, dado que as aplicações HPC possuem padrões bem definidas de trocas de mensagens, seria possível, então, elaborar estratégias de reconfiguração da rede para que a sobrecarga inerente da computação na nuvem possa ser reduzida e, com isso, tornar o uso de HPC na nuvem uma modalidade mais atrativa. A reconfiguração da rede por meio de Rede Definidas por \textit{Software} (SDN - \textit {Software Defined Network}) \cite{fundation2012software} é uma realidade atualmente e, por meio desta tecnologia, seria possível alterar de forma dinâmica a topologia da rede ou mesmo determinados parâmetros (como vazão, tempo de resposta, entre outros).
+
+A hipótese desta pesquisa é que ao detectar padrões de trocas de mensagens a rede poderia ser reconfigurada para otimizar o desempenho das aplicações HPC. Como exemplo, suponha uma aplicação que troque mensagens frequentemente, mas com poucos \textit{bytes}. Podemos supor que mensagens com essa característica poderiam ser mais sensíveis ao tempo de resposta do que a vazão de rede. Dessa forma, a rede seria reconfigurada com o objetivo de reduzir o tempo de resposta entre as MVs. 
+
+\subsection{Perguntas de Pesquisa}
+
+Com o objetivo de guiar esta pesquisa, foi elaborada uma série de perguntas. As perguntas foram divididas em duas categorias e são apresentadas na Tabela \ref{tabela:perguntas}. A primeira categoria, de pré-pesquisa, são perguntas que devem averiguar a viabilidade da pesquisa. Dependendo da conclusão de algumas dessas perguntas, a pesquisa poderá ser re-estruturada. Na segunda categoria, são perguntas que, uma vez verificada a viabilidade da pesquisa, devem ser o foco principal.
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Categoria}            & \textbf{Perguntas Endereçadas}                                                                                        \\ \hline
+\multirow{3}{*}{Pré-Pesquisa} & \begin{tabular}[c]{@{}c@{}}Qual o custo (sobrecarga) \\ para a aplicação HPC ao se reconfigurar a rede ?\end{tabular} \\ \cline{2-2} 
+                              & Com que frequência pode-se reconfigurar a rede ?                                                                      \\ \cline{2-2} 
+                              & \begin{tabular}[c]{@{}c@{}}Quão rápido e preciso \\ é caracterizar uma troca de mensagem (flow) ?\end{tabular}        \\ \hline
+\multirow{3}{*}{Pesquisa}     & \begin{tabular}[c]{@{}c@{}}Qual (ou quais) o melhor instante \\ para reconfigurar a rede ?\end{tabular}               \\ \cline{2-2} 
+                              & \begin{tabular}[c]{@{}c@{}}Quais topologias ou parâmetros \\ beneficiam quais tipos de mensagens ?\end{tabular}       \\ \cline{2-2} 
+                              & \begin{tabular}[c]{@{}c@{}}De quanto é o ganho de desempenho \\ ao se reconfigurar a rede ?\end{tabular}              \\ \hline
+\end{tabular}
+\caption{Perguntas de Pesquisa endereçadas neste projeto.}
+\label{tabela:perguntas}
+\end{table}
+
+\subsection{Fases de Pesquisa}
+Esta pesquisa será dividida em algumas fases que podem, ou não, serem executadas simultaneamente. As fases estão diretamente ligadas às perguntas de pesquisa elaboradas anteriormente e, dessa forma, espera-se que no decorrer da execução das fases, as perguntas sejam respondidas e, possivelmente, novas perguntas elaboradas. As fases do projeto são:  
+
 \begin{enumerate}
-    \item É possível quantificar a influência da latência e da largura de banda na troca de mensagens de aplicações HPC?
-    \item Qual a distância (hops) minima que uma MV deve estar de outras VMs afim de reduzir ou atenuar a latência? 
-    \item Há, de algum modo, influência mutua entre MVs localizadas no mesmo host e com o mesmo padrão de troca de mensagens?
-    \item É possível classificar ou caracterizar aplicações de acordo com as trocas de mensagens?
+    \item Estudo do impacto da reconfiguração da rede em aplicações HPC;
+    \item Estudo da viabilidade da caracterização de aplicações HPC através da troca de mensagens;
+    \item Estudo da interferência do padrão de comunicação em MVs localizadas no mesmo host físico;
+    \item Estudo para quantificar a sobrecarga da migração de MVs em aplicações HPC.
 \end{enumerate}
 
-As perguntas apresentadas devem nortear o estudo conduzido neste trabalho. Antes de avaliar as técnicas de caracterização das aplicações HPC, é necessário quantificar o impacto da latência e da largura de banda nessas aplicações. Além disso, precisa-se quantificar de que forma a distância entre as MVs pesa na latência da troca de mensagens. Esses estudos preliminares serão importantes para medir os possíveis ganhos de uma estratégia de caracterização que terá como entrada justamente a troca de mensagens entre as MVs.
 
 \section{Metodologia}
 
@@ -488,6 +508,7 @@ Para a condução dos testes estamos avaliando o uso de Testbeds para pesquisas 
  \item \textbf{Chameleon:} Nos mesmos moldes do Geni, é também uma infraestrutura voltada para pesquisa com recursos computacionais variados. Permite a criação de topologias e é financiado pela NSC;
  \item \textbf{Cloudlab:} Diferente dos testbeds anteriores, o Cloudlab não possui recursos físicos disponíveis (somente máquinas virtuais). Entretanto, possui uma ótima flexibilidade na criação de topologias. É possível assinalar taxa de perda de pacotes e outros parâmetros nos enlaces de rede;
  \item \textbf{Emulab:} O emulab não possui MVs disponíveis para serem criadas, somente máquinas físicas. Em testes preliminares é o testbed com maior disponibilidade de recursos físicos para a condução dos testes.
+  \item \textbf{Savi:} PREENCHER.
 \end{itemize}
 
 Como alternativas de simulação para a condução dos experimentos, as opções que teríamos disponíveis são:
@@ -505,97 +526,10 @@ O uso de simuladores pode ser uma alternativa para um possível teste com centen
 
 \subsection{Avaliação}
 
+\section{Bibliografia}
 
-
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation Results}
-%\label{fig_sim}
-%\end{figure}
-
-% Note that IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-
-
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command, the
-% \label for the overall figure must come after \caption.
-% \hfil must be used as a separator to get equal spacing.
-% The subfigure.sty package works much the same way, except \subfigure is
-% used instead of \subfloat.
-%
-%\begin{figure*}[!t]
-%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{subfigcase2}%
-%\label{fig_second_case}}}
-%\caption{Simulation results}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-
-
-% An example of a floating table. Note that, for IEEE style tables, the 
-% \caption command should come BEFORE the table. Table text will default to
-% \footnotesize as IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
-
-
-% Note that IEEE does not put floats in the very first column - or typically
-% anywhere on the first page for that matter. Also, in-text middle ("here")
-% positioning is not used. Most IEEE journals/conferences use top floats
-% exclusively. Note that, LaTeX2e, unlike IEEE journals/conferences, places
-% footnotes above bottom floats. This can be corrected via the \fnbelowfloat
-% command of the stfloats package.
-
-
-
-\section{Conclusion}
+\section{Conclusão}
 The conclusion goes here. this is more of the conclusion
-
-% conference papers do not normally have an appendix
-
 
 % use section* for acknowledgement
 \section*{Acknowledgment}
@@ -634,10 +568,6 @@ None
 
 %\end{thebibliography}
 
-
-
-
-% that's all folks
 \end{document}
 
 
