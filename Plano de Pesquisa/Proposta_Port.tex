@@ -104,7 +104,9 @@
 \usepackage{graphicx}
 \usepackage[export]{adjustbox}
 \usepackage{multirow}
-
+\usepackage{tabu}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
 
 % *** CITATION PACKAGES ***
 %
@@ -475,20 +477,29 @@ Com o objetivo de guiar esta pesquisa, foi elaborada uma série de perguntas. As
 \end{table}
 
 \subsection{Fases de Pesquisa}
-Esta pesquisa será dividida em algumas fases que podem, ou não, serem executadas simultaneamente. As fases estão diretamente ligadas às perguntas de pesquisa elaboradas anteriormente e, dessa forma, espera-se que no decorrer da execução das fases, as perguntas sejam respondidas e, possivelmente, novas perguntas elaboradas. As fases do projeto são:  
+Esta pesquisa será dividida em algumas fases que podem ser executadas simultaneamente. As fases estão diretamente ligadas às perguntas de pesquisa elaboradas anteriormente e, dessa forma, espera-se que no decorrer da execução das fases, as perguntas sejam respondidas e, possivelmente, novas perguntas elaboradas. As fases do projeto, bem como as respectivas descrições são apresentadas na Tabela \ref{tabela:fase_pesquisa}. 
 
-\begin{enumerate}
-    \item Estudo do impacto da reconfiguração da rede em aplicações HPC;
-    \item Estudo da viabilidade da caracterização de aplicações HPC através da troca de mensagens;
-    \item Estudo da interferência do padrão de comunicação em MVs localizadas no mesmo host físico;
-    \item Estudo para quantificar a sobrecarga da migração de MVs em aplicações HPC.
-\end{enumerate}
-
+\begin{table}[h!]
+\centering
+\begin{adjustbox}{width=0.45\textwidth}
+\begin{tabular}{|c|c|l|}
+\hline
+\textbf{Fase} & \textbf{Título da Fase}                                                                                            & \multicolumn{1}{c|}{\textbf{Descrição da Fase}}                                                                                                                                                                                    \\ \hline
+\textbf{01}   & \begin{tabular}[c]{@{}c@{}}Impacto e viabilidade da configuração de\\ rede em aplicações HPC.\end{tabular}         & \begin{tabular}[c]{@{}l@{}}Avaliar se e como a reconfiguração de rede\\ impacta no desempenho das aplicações HPC.\end{tabular}                                                                                                     \\ \hline
+\textbf{02}   & \begin{tabular}[c]{@{}c@{}}Caracterização de troca de mensagens\\ por meio de flow SDN.\end{tabular}               & \begin{tabular}[c]{@{}l@{}}Nesta fase, pretende-se estudar e avaliar \\ técnicas de caracterização de aplicações HPC \\ via trocas de mensagens {[}ref{]}.\end{tabular}                                                            \\ \hline
+\textbf{03}   & \begin{tabular}[c]{@{}c@{}}Definição de topologias e parâmetros\\ de rede para cada tipo de mensagem.\end{tabular} & \begin{tabular}[c]{@{}l@{}}O objetivo desta fase é verificar quais topologias\\ e parametrização de redes otimizam quais tipos\\ de mensagens HPC.\end{tabular}                                                                    \\ \hline
+\textbf{04}   & \begin{tabular}[c]{@{}c@{}}Criação de mecanismos de\\ gatilhos de reconfiguração de rede.\end{tabular}             & \begin{tabular}[c]{@{}l@{}}Esta fase é o desenvolvimento propriamente dito.\\ Nesta parte do trabalho deverá ser desenvolvido\\ um mecanismo que automatize o processo de \\ caracterização e reconfiguração da rede.\end{tabular} \\ \hline
+\textbf{05}   & Avaliação e Conclusão                                                                                              & \begin{tabular}[c]{@{}l@{}}Fase em que pretende-se avaliar a estratégia proposta\\ com benchmarks e aplicações reais HPC.\end{tabular}                                                                                             \\ \hline
+\end{tabular}
+\end{adjustbox}
+\caption{Fases da pesquisa.}
+\label{tabela:fase_pesquisa}
+\end{table}
 
 \section{Metodologia}
+Nesta seção apresentaremos a metodologia que deverá ser utilizada, tanto para a avaliação e estudos que serão conduzidos nas fases de pré-pesquisa como nas fases de implementação e testes. Inicialmente serão definidas algumas métricas de avaliação e como elas deverão ser coletadas tanto na fase de pre-pesquisa em que será estudado a viabilidade da pesquisa. Outra parte da avaliação que será apresentada nesta seção trata-se das topologias que serão construídas nos ambientes de teste (\textit{testbed}). O objetivo é propor algumas das topologias mais comuns em \textit{datacenters} e fazer a reconfiguração dessa topologia dinamicamente.
 
-
-\subsection{Métricas}
+\subsection{Métricas para Caracterização de Mensagens HPC}
 As métricas que serão avaliadas no trabalho para caracterizar padrões de trocas de mensagens serão as mesmas utilizadas em \citet{Chao:2008}. Nesse artigo os autores definem três dimensões para avaliar padrões de trocas de mensagens:
 \begin{itemize}
     \item \textbf{Temporal:} Taxa de mensagens enviadas;
@@ -496,19 +507,76 @@ As métricas que serão avaliadas no trabalho para caracterizar padrões de troc
     \item \textbf{Espacial:} Quantidade de destinatários.
 \end{itemize}
 
-Essas métricas podem ser coletadas de duas formas; a primeira colocando mecanismos de depuração no código que está sendo avaliado e a segunda forma coletando as informações a partir da infra-estrutura (ex. diretamente dos hospedeiros ou dos dispositivos de rede). Em um primeiro momento, a segunda alternativa é a preferencial por ser menos intrusivo e dependendo dos benchmarks e cargas de trabalho escolhidas essa alteração pode ser muito complexa ou mesmo inviável.
+Essas métricas podem ser coletadas de duas formas; a primeira colocando mecanismos de depuração no código que está sendo avaliado e a segunda forma coletando as informações a partir da infra-estrutura (ex. diretamente dos hospedeiros ou dos dispositivos de rede). Em um primeiro momento, a segunda alternativa é a preferencial por ser menos intrusivo e dependendo dos \textit{benchmarks} e cargas de trabalho escolhidas essa alteração pode ser muito complexa ou mesmo inviável.
 
-Uma das opções que serão avaliadas é o uso de switches com suporte a OpenFlow \cite{McKeown:2008}. Com o uso de controladores seria possível coletar estatísticas de cada porta do switch ou de cada flow. Essas estatísticas seriam usadas para identificar os padrões de comportamento das aplicações HPC e, em um próximo passo, fazer a caracterização das aplicações de acordo com as estatísticas coletadas.
+Como neste trabalho será utilizado SDN, as métricas definidas acima podem ser obtidas a partir dos \textit{flows} configurados entre as MVs que estejam trocando mensagens. Para cada \textit{flow} instalado será coletada as respectivas estatísticas. O protocolo OpenFlow 1.3\footnote{OpenFlow 1.3 Specs: \url{https://goo.gl/GTsA6z}} define estatísticas de quantidade de \textit{bytes} e pacotes por \textit{flow} e um \textit{timestamp} para que seja possível medir a quantidade média de \textit{bytes} trafegados, bem como o tamanho médio de cada pacote em um determinado intervalo de tempo. Além disso, também é possível coletar estatísticas por porta em \textit{switches} que implementam OpenFlow.
+
+Esses dados poderiam ser usados como entrada para algoritmos de caracterização (como Árvores de Decisão, K-\textit{means}, \textit{Naive} Bayes, etc) para identificar o tipo de mensagem trocada. É importante salientar que os algoritmos de caracterização serão avaliados no decorrer da pesquisa utilizando-se critérios como tempo de processamento e também precisão de classificação, pois podem haver diferenças significativas entre essas métricas e para a viabilidade da pesquisa é importante que seja identificado um meio termo desses fatores. Entretanto, a implementação destes algoritmos não é escopo deste projeto e, a não ser que seja identificada a necessidade de maiores análises, os detalhes de implementação não serão abordados.
+
+\subsection{Métricas para Avaliação de Reconfiguração da Rede}
+Nas fases iniciais do projeto, será necessário verificar se a reconfiguração da rede durante a execução da aplicação HPC interfere de alguma maneira em sua execução. Essa interferência deverá ser mensurada e estudada para que sejam avaliados possíveis momentos e também a frequência que a reconfiguração pode ocorrer. As métricas e suas respectivas descrições são apresentadas na Tabela \ref{tabela:metricas_viabilidade}. 
+
+\begin{table}[h!]
+\centering
+\begin{adjustbox}{width=0.45\textwidth}
+\begin{tabular}{|c|l|l|}
+\hline
+\textbf{Métrica}                                                            & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Unidade de \\ Medida\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Descrição}}                                                                             \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Tempo Total \\ de Execução\end{tabular}} & \begin{tabular}[c]{@{}l@{}}Segundos (s) ou\\ Minutos (m)\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}Tempo que leva para executar a\\ aplicação do início ao fim.\end{tabular}                \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Tempo de \\ Computação\end{tabular}}     & \begin{tabular}[c]{@{}l@{}}Segundos (s) ou\\ Minutos (m)\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}Tempo que o processador ficou\\ ocupado em computação da\\ aplicação (usr).\end{tabular} \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Latência de\\ Comunicação\end{tabular}}  & Micro Segundos (us)                                                                        & \begin{tabular}[c]{@{}l@{}}Intervalo de tempo gasto entre \\ uma troca de mensagem.\end{tabular}                    \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Vazão de \\ Rede\end{tabular}}           & \begin{tabular}[c]{@{}l@{}}Megabytes por\\ Segundo (MB/s)\end{tabular}                     & \begin{tabular}[c]{@{}l@{}}Quantidade de dados trafegados\\ em um intervalo de um segundo.\end{tabular}             \\ \hline
+\end{tabular}
+\end{adjustbox}
+\caption{Métricas para estudo de viabilidade.}
+\label{tabela:metricas_viabilidade}
+\end{table}
+
+\subsection{Topologias}
+Na condução dos experimentos serão simulados algumas topologias para verificar a viabilidade da hipótese e também para a execução dos experimentos na fase de implementação e avaliação. As topologias serão montadas nos ambientes de testes (\textit{testbeds}) apresentados na próxima seção utilizando diversas MVs. A intenção é que sejam configuradas ao menos 30 MVs executando distribuídas aleatóriamente em três grupos. O primeiro grupo são \textit{clusters} compostos por duas MVs, o segundo grupo por \textit{clusters} de quatro MVs e, por fim, um grupo com \textit{clusters} compostos por seis MVs.
+
+Um fator importante para é que os \textit{switches} usados nos ambientes de testes suportem o protocolo OpenFlow (OF) para que estejam submissos a um controlador de rede. O controlador que será utilizado ainda não foi escolhido, mas as opções que devem ser avaliadas são o OpenDayLight \cite{Medvel:2013}, POX \cite{Rodrigues2014} e ONOS \cite{Berde:2014}.
+
+\subsubsection{Topologia Para Reconfiguração}
+Para a avaliação do impacto da reconfiguração de rede em aplicações HPC estuda-se a criação de duas topologias. Uma mais simplificada, em que duas MVs podem se comunicar por dois caminhos diferentes (ou duas rotas distintas) e, no decorrer da execução da aplicação a rede é reconfigurada para que os pacotes sejam transferidos por outro caminho. Essa topologia simplificada é representada na Figura \ref{figura:reconf_rede01}. As setas indicam as rotas que serão alternadas no decorrer da execução. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.45\textwidth]{Figures/topologia_reconf_cen01.pdf} 
+\caption{Topologia inicial para avaliação do Impacto da reconfiguração de rede.}
+\label{figura:reconf_rede01}
+\end{figure}
+
+Uma segunda topologia que estuda-se usar para mensurar o impacto da reconfiguração é um pouco mais complexa. O objetivo desse cenário é quantificar a interferência da reconfiguração de mais de um \textit{switch} caminho entre as duas MVs. A Figura \ref{figura:reconf_rede02} ilustra essa topologia mais complexa em que diversas rotas, representadas pelas setas de diferentes cores, podem ser exploradas.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.45\textwidth]{Figures/topologia_reconf_cen02.pdf} 
+\caption{Topologia com mais \textit{switches} para explorar diversas rotas.}
+\label{figura:reconf_rede02}
+\end{figure}
+
+\subsubsection{Topologia Para Experimentação}
+Neste projeto, o escopo inicial é avaliar somente topologias hierárquicas, como a topologia apresentada na Figura \ref{figura:topology}. Essa topologia foi escolhida pois e a topologia comumente usada em \textit{datacenters}. Em geral, tem-se um \textit{switch} em cada \textit{rack}, também conhecido como \textit{Top Of Rack} (TOR) que, por sua vez, está conectado a outros dispositivos de rede que interconectam outros \textit{switches} TOR.
+
+Essa topologia também pode ser facilmente simulada nos ambientes de teste apresentados na seção a seguir. Na Figura \ref{figura:topology} temos uma topologia hierárquica de 2 níveis. Nesta topologia, uma mensagem enviada da VM01 para a VM04 (localizadas em \textit{racks} diferentes) deverá passar por 3 \textit{switches} e 4 enlaces. Pode-se generalizar o número de \textit{switches} e enlaces de acordo com o nível da topologia simulada. Uma mensagem entre uma MV localizada nos dois extremos da topologia de nível $n$ passará por $n*2$ enlaces e por $(n*2)-1$ \textit{switches}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.45\textwidth]{Figures/topologia_hierarquica.pdf} 
+\caption{Topologia Física da Rede SDN Proposta.}
+\label{figura:topology}
+\end{figure}
 
 \section{Ambiente de Testes}
-Para a condução dos testes estamos avaliando o uso de Testbeds para pesquisas em computação na nuvem. Outra possibilidade que está sendo avaliada é o uso de simuladores a condução dos estudos. A seguir é apresentada uma lista de Testbeds disponíveis (login e acessos já validados em todos eles) e uma breve descrição. Inicialmente o objetivo é trabalhar com máquinas físicas para ser possível manusear as MVs nos hosts e por isso ainda está sendo avaliado quais das Testbeds possui a melhor flexibilidade e disponibilidade de recursos.
+Para a condução dos testes estamos avaliando o uso de Testbeds para pesquisas em computação na nuvem. Outra possibilidade que está sendo verificada é o uso de simuladores na condução dos estudos. A seguir é apresentada uma lista de Testbeds disponíveis (login e acessos já validados em todos eles) e uma breve descrição. Inicialmente o objetivo é trabalhar com máquinas físicas para ser possível manusear as MVs nos hosts e por isso ainda está sendo avaliado quais das Testbeds possui a melhor flexibilidade e disponibilidade de recursos.
 
 \begin{itemize}
  \item \textbf{Geni \cite{Elliott:2009}}: Infraestrutura disponível para pesquisadores realizarem experimentos voltados para computação na nuvem. O Geni é financiado pela National Science Foundation (NSF) e conta com recursos computacionais de diversas universidades americanas. É possível reservar recursos físicos e montar topologias de rede customizadas com switches openflow;
  \item \textbf{Chameleon:} Nos mesmos moldes do Geni, é também uma infraestrutura voltada para pesquisa com recursos computacionais variados. Permite a criação de topologias e é financiado pela NSC;
  \item \textbf{Cloudlab:} Diferente dos testbeds anteriores, o Cloudlab não possui recursos físicos disponíveis (somente máquinas virtuais). Entretanto, possui uma ótima flexibilidade na criação de topologias. É possível assinalar taxa de perda de pacotes e outros parâmetros nos enlaces de rede;
  \item \textbf{Emulab:} O emulab não possui MVs disponíveis para serem criadas, somente máquinas físicas. Em testes preliminares é o testbed com maior disponibilidade de recursos físicos para a condução dos testes.
-  \item \textbf{Savi:} PREENCHER.
+  \item \textbf{Savi \cite{Joon:2013} :} Infraestrutura para controle e gerenciamento de recursos virtuais, como MVs e Redes Virtuais. Permite a criação de MVs dentro de topologias customizadas e também redes virtuais.
 \end{itemize}
 
 Como alternativas de simulação para a condução dos experimentos, as opções que teríamos disponíveis são:
@@ -520,20 +588,16 @@ Como alternativas de simulação para a condução dos experimentos, as opções
 
 O uso de simuladores pode ser uma alternativa para um possível teste com centenas de MVs  sendo executadas em um data center. Dessa forma, mesmo que um dos testbeds apresentados consiga atender todas as necessidades apontadas, o estudo e possivelmente o uso dos simuladores não será descartado.
 
-\subsection{Topologia para Condução de Experimentos}
 
 \section{Benchmarks e Cargas de Trabalho}
+Como carga de trabalho para os experimentos pretende-se usar uma combinação entre \textit{benchmarks} sintéticos (como SPEC e NPB) e aplicações reais. Os dados de desempenho das cargas de trabalho executadas serão sempre coletadas através de ferramentas e APIs do sistema operacional e não providas pela própria ferramenta de 
+
 
 \subsection{Avaliação}
 
-\section{Bibliografia}
-
-\section{Conclusão}
-The conclusion goes here. this is more of the conclusion
-
 % use section* for acknowledgement
-\section*{Acknowledgment}
-None
+%\section*{Acknowledgment}
+%None
 
 
 % trigger a \newpage just before the given reference
