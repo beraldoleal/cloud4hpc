@@ -107,6 +107,8 @@
 \usepackage{tabu}
 \usepackage{graphicx}
 \usepackage[export]{adjustbox}
+\usepackage{siunitx}
+
 
 % *** CITATION PACKAGES ***
 %
@@ -448,7 +450,7 @@ HPC; Cloud; Communication; Message Passing; Characterization
 
 
 \section{Introdução}
-A adesão de usuários de aplicações de Computação de Alto Desempenho (HPC - \textit{High Performance Computing}) à Computação na Nuvem, seja no âmbito acadêmico ou corporativo não é comum. Isso ocorre devido a diversos fatores, como interconexão de rede lenta, ambiente computacional heterogêneo, sobrecarga da virtualização e compartilhamento de recursos \cite{Gupta:2014}. De fato, a computação na nuvem tem como principal argumento a redução de custos e, de forma geral, centros computacionais que tem a sua disposição supercomputadores são menos suscetíveis a este argumento. Entretanto, usuários de aplicações HPC em centros computacionais de pequeno e médio porte (ex. \textit{startups}, pequenos laboratórios de pesquisa, entre outros) possuem maior sensibilidade ao apelo da computação na nuvem e por essa razão mais suscetíveis a adotá-la \cite{Gupta:2014} \cite{Gupta:2013}.
+A adesão de usuários de aplicações de Computação de Alto Desempenho (HPC - \textit{High Performance Computing}) à Computação na Nuvem, seja no âmbito acadêmico ou corporativo não é comum. Isso ocorre devido a diversos fatores, como interconexão de rede lenta, ambiente computacional heterogêneo, sobrecarga da virtualização e compartilhamento de recursos \cite{Gupta:2014}. De fato, a computação na nuvem tem como principal argumento a redução de custos e, de forma geral, centros computacionais que tem a sua disposição supercomputadores são menos suscetíveis a este argumento. Entretanto, usuários de aplicações HPC em centros computacionais de pequeno e médio porte (ex. \textit{startups}, pequenos laboratórios de pesquisa, entre outros) possuem maior sensibilidade ao apelo da computação na nuvem e por essa razão mais propensas a adotá-la \cite{Gupta:2014} \cite{Gupta:2013}.
 
 Apesar do custo da computação na nuvem ser um atrativo, sua adoção ainda sofre grande resistência por parte de usuários de pequeno e médio porte de aplicações HPC em razão da degradação do desempenho \cite{Niu:2013}. Em grande medida, essa degradação de desempenho de aplicações HPC na nuvem deve-se ao uso compartilhado de recursos computacionais. Nesse cenário diversas Máquinas Virtuais (MVs) competem pela utilização de recursos computacionais do \textit{host} físico e, com isso, ocorre o comprometimento do desempenho das aplicações. O compartilhamento da interface de rede, em especial, é um dos principais fatores de degradação de desempenho \cite{Gupta:2014} das aplicações HPC que possuem grande dependência da troca de mensagens para realizar a computação.
 
@@ -458,7 +460,7 @@ A hipótese desta pesquisa é que ao detectar padrões de trocas de mensagens a 
 
 \subsection{Perguntas de Pesquisa}
 
-Com o objetivo de guiar esta pesquisa, foi elaborada uma série de perguntas. As perguntas foram divididas em duas categorias e são apresentadas na Tabela \ref{tabela:perguntas}. A primeira categoria, de pré-pesquisa, são perguntas que visam averiguar a viabilidade da pesquisa. Dependendo da conclusão de algumas dessas perguntas, a pesquisa poderá ser re-estruturada. Na segunda categoria, são perguntas que, uma vez verificada a viabilidade da pesquisa, devem ser o foco principal.
+Com o objetivo de guiar esta pesquisa, foram elaboradas uma série de perguntas. As perguntas foram divididas em duas categorias e são apresentadas na Tabela \ref{tabela:perguntas}. A primeira categoria, de pré-pesquisa, são perguntas que visam averiguar a viabilidade da pesquisa. Dependendo da conclusão de algumas dessas perguntas, a pesquisa poderá ser re-estruturada. Na segunda categoria, são perguntas que, uma vez verificada a viabilidade da pesquisa, devem ser o foco principal.
 
 \begin{table}[]
 \centering
@@ -467,7 +469,7 @@ Com o objetivo de guiar esta pesquisa, foi elaborada uma série de perguntas. As
 \textbf{Categoria}            & \textbf{Perguntas Endereçadas}                                                                                        \\ \hline
 \multirow{3}{*}{Pré-Pesquisa} & \begin{tabular}[c]{@{}c@{}}Qual o custo (sobrecarga) \\ para a aplicação HPC ao se reconfigurar a rede ?\end{tabular} \\ \cline{2-2} 
                               & Com que frequência pode-se reconfigurar a rede ?                                                                      \\ \cline{2-2} 
-                              & \begin{tabular}[c]{@{}c@{}}Quão rápido e preciso \\ é caracterizar uma troca de mensagem (flow) ?\end{tabular}        \\ \hline
+                              & \begin{tabular}[c]{@{}c@{}}Quão rápido e preciso \\ é caracterizar uma troca de mensagem ?\end{tabular}        \\ \hline
 \multirow{3}{*}{Pesquisa}     & \begin{tabular}[c]{@{}c@{}}Qual (ou quais) o melhor instante \\ para reconfigurar a rede ?\end{tabular}               \\ \cline{2-2} 
                               & \begin{tabular}[c]{@{}c@{}}Quais topologias ou parâmetros \\ beneficiam quais tipos de mensagens ?\end{tabular}       \\ \cline{2-2} 
                               & \begin{tabular}[c]{@{}c@{}}De quanto é o ganho de desempenho \\ ao se reconfigurar a rede ?\end{tabular}              \\ \hline
@@ -477,7 +479,7 @@ Com o objetivo de guiar esta pesquisa, foi elaborada uma série de perguntas. As
 \end{table}
 
 \subsection{Fases de Pesquisa}
-Esta pesquisa será dividida em algumas fases que podem ser executadas simultaneamente. As fases estão diretamente ligadas às perguntas de pesquisa elaboradas anteriormente e, dessa forma, espera-se que no decorrer da execução das fases, as perguntas sejam respondidas e, possivelmente, novas perguntas elaboradas. As fases do projeto, bem como as respectivas descrições são apresentadas na Tabela \ref{tabela:fase_pesquisa}. 
+Esta pesquisa será dividida em fases que podem ser executadas simultaneamente. As fases estão diretamente ligadas às perguntas de pesquisa elaboradas anteriormente e, dessa forma, espera-se que no decorrer da execução das fases, as perguntas sejam respondidas e, possivelmente, novas perguntas elaboradas. As fases do projeto, bem como as respectivas descrições são apresentadas na Tabela \ref{tabela:fase_pesquisa}. 
 
 \begin{table}[h!]
 \centering
@@ -524,7 +526,7 @@ Nas fases iniciais do projeto, será necessário verificar se a reconfiguração
 \textbf{Métrica}                                                            & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Unidade de \\ Medida\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Descrição}}                                                                             \\ \hline
 \textbf{\begin{tabular}[c]{@{}c@{}}Tempo Total \\ de Execução\end{tabular}} & \begin{tabular}[c]{@{}l@{}}Segundos (s) ou\\ Minutos (m)\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}Tempo que leva para executar a\\ aplicação do início ao fim.\end{tabular}                \\ \hline
 \textbf{\begin{tabular}[c]{@{}c@{}}Tempo de \\ Computação\end{tabular}}     & \begin{tabular}[c]{@{}l@{}}Segundos (s) ou\\ Minutos (m)\end{tabular}                      & \begin{tabular}[c]{@{}l@{}}Tempo que o processador ficou\\ ocupado em computação da\\ aplicação (usr).\end{tabular} \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Latência de\\ Comunicação\end{tabular}}  & Micro Segundos (us)                                                                        & \begin{tabular}[c]{@{}l@{}}Intervalo de tempo gasto entre \\ uma troca de mensagem.\end{tabular}                    \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Latência de\\ Comunicação\end{tabular}}  & Micro Segundos ($\mu$s)                                                                        & \begin{tabular}[c]{@{}l@{}}Intervalo de tempo gasto entre \\ uma troca de mensagem.\end{tabular}                    \\ \hline
 \textbf{\begin{tabular}[c]{@{}c@{}}Vazão de \\ Rede\end{tabular}}           & \begin{tabular}[c]{@{}l@{}}Megabytes por\\ Segundo (MB/s)\end{tabular}                     & \begin{tabular}[c]{@{}l@{}}Quantidade de dados trafegados\\ em um intervalo de um segundo.\end{tabular}             \\ \hline
 \end{tabular}
 \end{adjustbox}
@@ -569,13 +571,13 @@ Essa topologia também pode ser facilmente simulada nos ambientes de teste apres
 \end{figure}
 
 \section{Ambiente de Testes}
-Para a condução dos testes estamos avaliando o uso de Testbeds para pesquisas em computação na nuvem. Outra possibilidade que está sendo verificada é o uso de simuladores na condução dos estudos. A seguir é apresentada uma lista de Testbeds disponíveis (login e acessos já validados em todos eles) e uma breve descrição. Inicialmente o objetivo é trabalhar com máquinas físicas para ser possível manusear as MVs nos hosts e por isso ainda está sendo avaliado quais das Testbeds possui a melhor flexibilidade e disponibilidade de recursos.
+Para a condução dos testes estamos avaliando o uso de \textit{testbeds} para pesquisas em computação na nuvem. Outra possibilidade que está sendo verificada é o uso de simuladores na condução dos estudos. A seguir é apresentada uma lista de \textit{testbeds} disponíveis e uma breve descrição. Inicialmente o objetivo é trabalhar com máquinas físicas para ser possível manusear as MVs nos \textit{hosts} e por esta razão os \textit{testbeds} ainda estão sendo avaliados para verificar quais deles possuem melhor flexibilidade e disponibilidade de recursos.
 
 \begin{itemize}
- \item \textbf{Geni \cite{Elliott:2009}}: Infraestrutura disponível para pesquisadores realizarem experimentos voltados para computação na nuvem. O Geni é financiado pela National Science Foundation (NSF) e conta com recursos computacionais de diversas universidades americanas. É possível reservar recursos físicos e montar topologias de rede customizadas com switches openflow;
- \item \textbf{Chameleon:} Nos mesmos moldes do Geni, é também uma infraestrutura voltada para pesquisa com recursos computacionais variados. Permite a criação de topologias e é financiado pela NSC;
- \item \textbf{Cloudlab:} Diferente dos testbeds anteriores, o Cloudlab não possui recursos físicos disponíveis (somente máquinas virtuais). Entretanto, possui uma ótima flexibilidade na criação de topologias. É possível assinalar taxa de perda de pacotes e outros parâmetros nos enlaces de rede;
- \item \textbf{Emulab:} O emulab não possui MVs disponíveis para serem criadas, somente máquinas físicas. Em testes preliminares é o testbed com maior disponibilidade de recursos físicos para a condução dos testes.
+ \item \textbf{Geni \cite{Elliott:2009}}: Infraestrutura disponível para pesquisadores realizarem experimentos voltados para computação na nuvem. O Geni é financiado pela \textit{National Science Foundation} (NSF) e conta com recursos computacionais de diversas universidades americanas. É possível reservar recursos físicos e montar topologias de rede customizadas com \textit{switches} openflow;
+ \item \textbf{Chameleon:} Na mesma linha do Geni, é também uma infraestrutura voltada para pesquisa com recursos computacionais variados. Permite a criação de topologias e é financiado pela NSC;
+ \item \textbf{Cloudlab:} Diferente dos \textit{testbeds} anteriores, o Cloudlab não possui recursos físicos disponíveis (somente máquinas virtuais). Entretanto, possui uma ótima flexibilidade na criação de topologias. É possível indicar taxas de perda de pacotes e outros parâmetros nos enlaces de rede;
+ \item \textbf{Emulab:} O emulab não possui MVs disponíveis para serem criadas, somente máquinas físicas. Em testes preliminares é o \textit{testbed} com maior disponibilidade de recursos físicos para a condução dos testes.
   \item \textbf{Savi \cite{Joon:2013} :} Infraestrutura para controle e gerenciamento de recursos virtuais, como MVs e Redes Virtuais. Permite a criação de MVs dentro de topologias customizadas e também redes virtuais.
 \end{itemize}
 
@@ -583,17 +585,19 @@ Como alternativas de simulação para a condução dos experimentos, as opções
 \begin{itemize}
     \item \textbf{CloudSim \cite{Calheiros:2011}}: É um simulador bastante usado para fazer avaliações de desempenho de aplicações HPC na nuvem. É possível modelar uma nuvem inserindo diversos parametros como a a capacidade computacional de cada máquina física, propriedades da rede e cargas de trabalho. Recentemente foi adicionado um recurso de simulação de migração de máquinas virtuais no CloudSim o que o torna um forte candidato a ser utilizado em nossos experimentos. O principal desafio de usar o CloudSim é como inserir traces ou a execução de benchmarks nas simulações; 
     \item \textbf{GreenCLoud \cite{Kliazovich:2010}}: Simulador de computação na nuvem, mas com um foco mais voltado ao consumo de energia. Apesar disso, possui uma boa interface de programação (e interface gráfica) e possibilita a simulação de migração de MVs. Assim como ocorre com o CloudSim, a execução de benchmarks e cargas de trabalho precisam ser melhor avaliadas;
-    \item \textbf{Mininet \cite{Handigol:2012}}: O Mininet simula o comportamento de uma rede e com ele é possível construir diversas topologias de rede com diferentes tipos de switches. Entre outras coisas, pode criar redes com diversos parametros como taxa de perda de pacotes, latência, largura de banda, etc. Assim como ocorre com o CloudSim, o problema do mininet reside na forma de executar aplicações HPC nos hosts.
+    \item \textbf{Mininet \cite{Handigol:2012}}: O Mininet simula o comportamento de uma rede e com ele é possível construir diversas topologias de rede com diferentes tipos de \textit{switches}. Entre outras coisas, pode criar redes com diversos parametros como taxa de perda de pacotes, latência, largura de banda, etc. Assim como ocorre com o CloudSim, o problema do mininet reside na forma de executar aplicações HPC nos hosts.
 \end{itemize}
 
-O uso de simuladores pode ser uma alternativa para um possível teste com centenas de MVs  sendo executadas em um data center. Dessa forma, mesmo que um dos testbeds apresentados consiga atender todas as necessidades apontadas, o estudo e possivelmente o uso dos simuladores não será descartado.
+O uso de simuladores pode ser uma alternativa para um possível teste com centenas de MVs  sendo executadas em um data center. Dessa forma, mesmo que um dos \textit{testbeds} apresentados consiga atender todas as necessidades apontadas, o estudo e possivelmente o uso dos simuladores não será descartado.
 
 
 \section{Benchmarks e Cargas de Trabalho}
-Como carga de trabalho para os experimentos pretende-se usar uma combinação entre \textit{benchmarks} sintéticos (como SPEC e NPB) e aplicações reais. Os dados de desempenho das cargas de trabalho executadas serão sempre coletadas através de ferramentas e APIs do sistema operacional e não providas pela própria ferramenta de 
+Como carga de trabalho para os experimentos pretende-se usar uma combinação entre \textit{benchmarks} sintéticos (como SPEC e NPB) e aplicações reais. Os dados de desempenho das cargas de trabalho executadas serão sempre coletadas através de ferramentas e APIs do sistema operacional através de \textit{scripts} customizados.  
 
 
 \subsection{Avaliação}
+Para que haja 
+
 
 % use section* for acknowledgement
 %\section*{Acknowledgment}
