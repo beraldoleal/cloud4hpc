@@ -499,7 +499,7 @@ Esta pesquisa será dividida em fases que podem ser executadas simultaneamente. 
 \end{table}
 
 \section{Metodologia}
-Nesta seção apresentaremos a metodologia que deverá ser utilizada, tanto para a avaliação e estudos que serão conduzidos nas fases de pré-pesquisa como nas fases de implementação e testes. Inicialmente serão definidas algumas métricas de avaliação e como elas deverão ser coletadas tanto na fase de pre-pesquisa em que será estudado a viabilidade da pesquisa. Outra parte da avaliação que será apresentada nesta seção trata-se das topologias que serão construídas nos ambientes de teste (\textit{testbed}). O objetivo é propor algumas das topologias mais comuns em \textit{datacenters} e fazer a reconfiguração dessa topologia dinamicamente.
+Nesta seção apresentaremos a metodologia que deverá ser utilizada, tanto para a avaliação e estudos que serão conduzidos nas fases de pré-pesquisa como nas fases de implementação e testes. Inicialmente serão definidas algumas métricas de avaliação e como elas devem ser coletadas tanto na fase de pre-pesquisa em que será estudado a viabilidade da pesquisa. Outra parte da avaliação que será apresentada nesta seção trata-se das topologias que serão construídas nos ambientes de teste (\textit{testbed}). O objetivo é propor algumas das topologias mais comuns em \textit{datacenters} e fazer a reconfiguração dessa topologia dinamicamente.
 
 \subsection{Métricas para Caracterização de Mensagens HPC}
 As métricas que serão avaliadas no trabalho para caracterizar padrões de trocas de mensagens serão as mesmas utilizadas em \citet{Chao:2008}. Nesse artigo os autores definem três dimensões para avaliar padrões de trocas de mensagens:
@@ -535,7 +535,7 @@ Nas fases iniciais do projeto, será necessário verificar se a reconfiguração
 \end{table}
 
 \subsection{Topologias}
-Na condução dos experimentos serão simulados algumas topologias para verificar a viabilidade da hipótese e também para a execução dos experimentos na fase de implementação e avaliação. As topologias serão montadas nos ambientes de testes (\textit{testbeds}) apresentados na próxima seção utilizando diversas MVs. A intenção é que sejam configuradas ao menos 30 MVs executando distribuídas aleatóriamente em três grupos. O primeiro grupo são \textit{clusters} compostos por duas MVs, o segundo grupo por \textit{clusters} de quatro MVs e, por fim, um grupo com \textit{clusters} compostos por seis MVs.
+Na condução dos experimentos serão simulados algumas topologias para verificar a viabilidade da hipótese e também para a execução dos experimentos na fase de implementação e avaliação. As topologias serão montadas nos ambientes de testes (\textit{testbeds}) apresentados na próxima seção utilizando diversas MVs. A intenção é que sejam configuradas ao menos 30 MVs distribuídas aleatóriamente em três grupos. O primeiro grupo são \textit{clusters} compostos por duas MVs, o segundo grupo por \textit{clusters} de quatro MVs e, por fim, um grupo com \textit{clusters} compostos por seis MVs.
 
 Um fator importante para é que os \textit{switches} usados nos ambientes de testes suportem o protocolo OpenFlow (OF) para que estejam submissos a um controlador de rede. O controlador que será utilizado ainda não foi escolhido, mas as opções que devem ser avaliadas são o OpenDayLight \cite{Medvel:2013}, POX \cite{Rodrigues2014} e ONOS \cite{Berde:2014}.
 
@@ -593,10 +593,6 @@ O uso de simuladores pode ser uma alternativa para um possível teste com centen
 
 \section{Benchmarks e Cargas de Trabalho}
 Como carga de trabalho para os experimentos pretende-se usar uma combinação entre \textit{benchmarks} sintéticos (como SPEC e NPB) e aplicações reais. Os dados de desempenho das cargas de trabalho executadas serão sempre coletadas através de ferramentas e APIs do sistema operacional através de \textit{scripts} customizados.  
-
-
-\subsection{Avaliação}
-Para que haja 
 
 
 % use section* for acknowledgement
