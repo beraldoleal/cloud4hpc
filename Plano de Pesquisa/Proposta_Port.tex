@@ -594,6 +594,28 @@ O uso de simuladores pode ser uma alternativa para um possível teste com centen
 \section{Benchmarks e Cargas de Trabalho}
 Como carga de trabalho para os experimentos pretende-se usar uma combinação entre \textit{benchmarks} sintéticos (como SPEC e NPB) e aplicações reais. Os dados de desempenho das cargas de trabalho executadas serão sempre coletadas através de ferramentas e APIs do sistema operacional através de \textit{scripts} customizados.  
 
+\subsection{Avaliação}
+Para que seja feita uma correta avaliação dos resultados obtidos através de significância estatística cada \textit{benchmark} deverá ser executado de 30 a 50 vezes. Será utilizado o teste \textit{student-t} com margem de erro de 90\%.
+
+\subsection{\textit{Benchmarks}}
+Serão utilizados \textit{benchmarks} sintéticos e cargas de trabalho reais para a avaliação do ambiente. A tabela \ref{tabela:benchmarks} apresenta os \textit{benchmarks} que serão utilizados na avaliação.
+
+\begin{table}[h!]
+\centering
+\begin{adjustbox}{width=0.45\textwidth}
+\begin{tabular}{|c|c|l|}
+\hline
+\textbf{Benchmark}                                                             & \textbf{\begin{tabular}[c]{@{}c@{}}(S)intético / \\ (C)arga Real\end{tabular}} & \multicolumn{1}{c|}{\textbf{Descrição}}                                                                     \\ \hline
+\textbf{SPEC \cite{Muller:2010}}                                                                  & (S)                                                                            & Será utilizado o benchmark mpi2007.                                                                         \\ \hline
+\textbf{NPB}                                                                   & (S)                                                                            & \begin{tabular}[c]{@{}l@{}}Diversos benchmarks sintéticos que \\ podem ser executados com MPI.\end{tabular} \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Parallel Workloads \\ Archive\end{tabular}} & (C)                                                                            & Traces de cargas de trabalho reais.                                                                         \\ \hline
+\end{tabular}
+\end{adjustbox}
+\caption{\textit{Benchmarks} utilizados para a avaliação.}
+\label{tabela:benchmarks}
+\end{table}
+
+\clearpage
 
 % use section* for acknowledgement
 %\section*{Acknowledgment}
