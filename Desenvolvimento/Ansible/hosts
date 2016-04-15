@@ -1,0 +1,10 @@
+[nodes]
+node0
+node1
+
+[switches]
+switch0
+switch1
+
+[controller]
+controller
