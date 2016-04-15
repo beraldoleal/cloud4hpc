@@ -1,0 +1,29 @@
+---
+- hosts: all
+  user: root
+  vars:
+    base_dir: "{{ BASE_DIR|default('/users/abaruchi') }}"
+
+
+  tasks:
+    - name: Install packages from apt repos
+      apt: name={{ item }} state=latest update_cache=yes cache_valid_time=3600
+      with_items:
+        - git
+
+    - name: Creates the Controller dir
+      file: path={{ base_dir }}/controller/ state=directory
+
+    - name: Clonning GIT repo
+      git: repo=https://github.com/abaruchi/cloud4hpc.git dest={{ base_dir }}/
+
+
+- hosts: controller
+
+  tasks:
+    - name : Creates the Controller dir
+      file: path={{ base_dir }}/controller/ state=directory
+
+    - name: Clonning POX repo
+      git: repo:https://github.com/noxrepo/pox.git  dest={{ base_dir }}/controller/
+
