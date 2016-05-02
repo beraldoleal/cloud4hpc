@@ -1,21 +1,25 @@
 ---
 - hosts: all
-  user: root
+  user: cc
   vars:
-    base_dir: "{{ BASE_DIR|default('/users/abaruchi') }}"
+    base_dir: "{{ BASE_DIR|default('/home/abaruchi/') }}"
+    password: $1$xyz$2Tf39Fny2BJdNPuwf7opJ.
 
 
   tasks:
-    - name: Install packages from apt repos
+   - name: Add user abaruchi in all hosts
+     user: name=james shell=/bin/bash groups=cc,adm comment="Master User - Kicking Asses" password={{password}}
+
+    - name: Install packages from yum repos
       apt: name={{ item }} state=latest update_cache=yes cache_valid_time=3600
       with_items:
         - git
 
-    - name: Creates the Controller dir
-      file: path={{ base_dir }}/controller/ state=directory
-
     - name: Clonning GIT repo
       git: repo=https://github.com/abaruchi/cloud4hpc.git dest={{ base_dir }}/
+
+    - name: Configuring /etc/hosts
+      
 
 
 - hosts: controller
