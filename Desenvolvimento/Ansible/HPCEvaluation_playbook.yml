@@ -85,8 +85,8 @@
   tasks:
     - name: Adding default route in node-1
       command: route add -net 10.0.4.0/24 gw 10.10.1.9
-      when: "{{ ansible_hostname }}" == "node-1"
+      when: ansible_hostname == "node-1"
     
     - name: Adding default route in node-2
       command: route add -net 10.10.1.0/24 gw 10.0.4.13
-      when: "{{ ansible_hostname }}" == "node-2"
+      when: ansible_hostname == "node-2"
