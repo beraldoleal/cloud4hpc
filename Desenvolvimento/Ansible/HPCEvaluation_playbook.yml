@@ -13,7 +13,7 @@
       user: name=abaruchi shell=/bin/bash groups=cc,adm comment="Master User - Kicking Asses" password={{password}}
 
     - name: Allow SSH connections with password
-      copy: src=./Templates/sshd_config dest=/etc/sshd/ owner=root group=root mode=644 backup=yes remote_src=yes
+      copy: src=./Templates/sshd_config dest=/etc/ssh/ owner=root group=root mode=644 backup=yes remote_src=yes
 
     - name: Add Google DNS to all hosts
       lineinfile: dest=/etc/resolv.conf
