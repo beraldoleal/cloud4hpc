@@ -11,6 +11,12 @@
   tasks:
     - name: Add user abaruchi in all hosts
       user: name=abaruchi shell=/bin/bash groups=cc,adm comment="Master User - Kicking Asses" password={{password}}
+      
+    - name: Adding abaruchi to sudoers
+      lineinfile: dest=/etc/sudoers
+        backup=yes 
+        line='abaruchi	ALL=(ALL)	ALL'
+        state=present     
 
     - name: Allow SSH connections with password
       copy: src=./Templates/sshd_config dest=/etc/ssh/ owner=root group=root mode=644 backup=yes remote_src=yes
